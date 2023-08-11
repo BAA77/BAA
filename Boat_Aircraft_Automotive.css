@@ -1,0 +1,1633 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* ------- Window Background ------- */
+div#windowBg {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0vw;
+    top: 0vh;
+    background-color: #0C8B78;
+    z-index: 6;
+}
+
+
+div.backsplash {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #00FECC;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -3;
+}
+
+div#backsplash {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #339D87;
+    background-image: url(JPEG/welcomeMessageBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -3;
+}
+
+/* -------Header( Navigation Menu )------- */
+header {
+    background-color: #26BD9C;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Eczar', serif;
+    z-index: 11;
+    box-shadow: 0px 0.25px 2px white;
+}
+
+header div.logoAndMenuBar {
+    width: 3.4rem;
+    height: 3.0rem;
+    padding: 0.1rem 0.4rem;
+    margin: 0.17rem 0rem 0rem 0rem;
+}
+
+header div.logoAndMenuBar a {
+    text-decoration: none;
+}
+
+header div.logoAndMenuBar a img#logo {
+    width: 3.2rem;
+    height: 2.9rem;
+    margin: 0rem auto;
+}
+
+header nav {
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #122B44;
+}
+
+header nav ul a li {
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    margin: 0.7rem 1.7rem 0.2rem 1.7rem;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2rem;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px white;
+}
+
+header nav ul a li.active {
+    color: white;
+}
+
+header nav ul a li:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    margin-top: 0.3rem;
+    background-color: #122B44;
+    box-shadow: 1px 1px 7px white;
+    transition: 0.3s;
+}
+
+header nav ul a li:hover:after {
+    width: 100%;
+}
+
+header nav ul a li.active:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin-top: 0.3rem;
+    background-color: white;
+    box-shadow: 1px 1px 7px white;
+
+}
+
+header div.logoAndMenuBar img.menuBar {
+    display: none;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/* -------Platform Welcome Message------- */
+div.platformWelcomeMessage {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 9.7rem;
+    font-family: 'Abhaya Libre', serif;
+}
+
+div.platformWelcomeMessage h1 {
+    font-size: 40px;
+    font-family: 'Abhaya Libre', serif;
+    animation-name: slide;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide {
+    from {
+        margin-top: 200vh;
+    }
+    to {
+        margin-top: 0vh;
+    }
+}
+
+div.platformWelcomeMessage h1 span#targetWelcome {
+    color: #122B44;
+}
+
+div.platformWelcomeMessage h4 {
+    font-size: 15px;
+    font-family: 'Abhaya Libre', serif;
+    animation-name: slide;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+}
+
+div.platformWelcomeMessage div#welcomeImage img {
+    width: 445px;
+    height: 304.78px;
+    animation-name: appear;
+    animation-duration: 2.3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes appear {
+    0% {
+        margin-top: 200vh;
+        transform: scale(0);
+    }
+    75% {
+        margin-top: 0vh;
+        transform: scale(0);
+    }
+    90% {
+        margin-top: 0vh;
+        transform: scale(1.1);
+    }
+    100% 
+    {
+        margin-top: 0vh;
+        transform: scale(1);
+    }
+}
+
+div.platformWelcomeMessage p {
+    font-size: 20px;
+    font-family: 'Abhaya Libre', serif;
+    width: 75%;
+    padding: 0.1rem 0.1rem;
+    animation-name: drift;
+    animation-duration: 4.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes drift {
+    0% {
+        margin-right: 200vw;
+        margin-top: 200vh;
+    }
+    35% {
+        margin-right: 200vw;
+        margin-top: 200vh;
+    }
+    100% {
+        margin-right: 0vw;
+        margin-top: 0vh;
+
+    }
+}
+
+div.scrollContentContainer {
+    position: absolute;
+    top: 100vh;
+    left: 0rem;
+    width: 100%;
+    background-color: #339D87;
+}
+
+/* -------The Bridge Section------- */
+section.theBridgeSection {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background: url(JPEG/background3.jpg);
+    padding: 1rem 0.2rem;
+    font-family: 'Abhaya Libre', serif;
+}
+
+section.theBridgeSection h3 {
+    font-family: 'Eczar', serif;
+    font-size: 31px;
+    line-height: 2rem;
+    margin: 0rem 0rem 0.1rem 0rem;
+}
+
+section.theBridgeSection div.theBridgeContent {
+    display: inline-flex;
+}
+
+section.theBridgeSection div.theBridgeContent img {
+    width: 237px;
+    height: 174.2px;
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem;
+}
+
+section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
+    height: 172.2px;
+    font-size: 24px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+/* -------How To Use The Platform------- */
+section.howToUseThePlatform {
+    font-family: 'Abhaya Libre', serif;
+}
+
+section.howToUseThePlatform div.hTUTPContent {
+    color: white;
+}
+
+section.howToUseThePlatform div.hTUTPContent h3 {
+    text-align: center;
+    font-family: 'Eczar', serif;
+    font-size: 31px;
+    line-height: 2rem;
+    padding: 0.2rem 0.3rem;
+    margin: 2.8rem 0rem 0.4rem 0rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent h3 span#targetSteps {
+    color: #122B44;
+}
+
+section.howToUseThePlatform div.hTUTPContent #imgLS {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    left: 94vw;
+    top: 9vh;
+    z-index: 8;
+    background-color: rgb(139, 10, 10);
+    padding: 3px 3px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#imgAS, #imgMS, #imglS {
+    display: none;
+}
+
+section.howToUseThePlatform div.hTUTPContent #imgLS:hover {
+    background-color: #122B44;
+    border: 2px solid white;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps {
+    border: 3px solid white;
+    background: url(JPEG/background4.jpg);
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.8rem 0rem 0.8rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps h4 {
+    font-size: 25px;
+    color: #122B44;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent {
+    display: flex;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg {
+    height: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem 0rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg .iReplica {
+    width: 437px;
+    margin-right: 1rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.stepsPImg {
+    width: 437px;
+    height: 158px;
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.stepsPImg:hover {
+    border: 1px solid white;
+    box-shadow: 3px 3px 4px #2feac1;
+    transform: scale(1.03);
+}
+
+.img1450MQ,
+.img685MQ,
+.img359MQ {
+    display: none;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 0.9rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
+    font-size: 24px;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p span#MediaQ359 {
+    display: none;
+}
+
+/* -------Boat, Aircraft and Automotive News------- */
+section {
+    margin-top: 3rem;
+    font-family: 'Abhaya Libre', serif;
+}
+
+section h3 {
+    text-align: center;
+    font-family: 'Eczar', serif;
+    font-size: 31px;
+    line-height: 2rem;
+    padding: 0.1rem;
+    margin-bottom: 1.6rem;
+    color: whitesmoke;
+}
+
+section div.news {
+}
+
+section div.news div.swiper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section div.news div.swiper div.img {
+
+}
+
+section div.news div.swiper div.img button {
+    cursor: pointer;
+}
+
+section div.news div.swiper div.img button.preBtn {
+    margin-left: 2.1rem;
+    margin-right: 0.8rem;
+}
+
+section div.news div.swiper div.img button.nxtBtn {
+    margin-right: 2.1rem;
+    margin-left: 0.8rem;
+}
+
+section div.news div.swiper div.img  button img {
+    width: 2rem;
+    height: 2.1rem;
+    padding: 0.2rem;
+}
+
+.gate {
+    width: 4.5rem;
+    height: 16rem;
+    position: absolute;
+    background-image: linear-gradient(90deg, #226764, transparent);
+    z-index: 5;
+}
+
+#leftGate {
+    left: 6.5%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: none;
+}
+
+#rightGate {
+    display: block;
+    right: 6.5%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-image: linear-gradient(-90deg, #226764, transparent);
+}
+
+section div.news div.swiper div.swiperWrapper {
+    width: 87%;
+    background-color: #26BD9C;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0.9rem 0.3rem 1.2rem 1.5rem;
+    border: 1px solid #22676482;
+    border-radius: 8px;
+    display: flex;
+}
+
+section div.news div.swiper div.swiperWrapper::-webkit-scrollbar {
+    display:  none;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide {
+    background: #FEFDF9;
+    padding: 0.3rem 0.1rem 1rem 0.1rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+    display: flex;
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide:hover {
+    background: rgba(208, 208, 208, 0.818);
+    transform: scale(1.09);
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide a {
+    text-decoration: none;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkImg {
+    margin: 0rem 0.3rem;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkImg img {
+    width: 9.3rem;
+    height: 9.3rem;
+    border: 5px solid #26BD9C;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle {
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #339D87;
+    border-radius: 6px;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p {
+    font-size: 19px;
+    text-align: center;
+    color: white;
+}
+
+
+/* -------Closing Note------- */
+section.closingNote {
+    width: 100%;
+    text-align: center;
+    background: url(JPEG/background3.jpg);
+    padding: 1rem 0.2rem;
+    margin-top: 6rem;
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+}
+
+section.closingNote div.closingNoteContent {
+    display: inline-flex;
+}
+
+section.closingNote div.closingNoteContent img {
+    width: 237px;
+    height: 174.2px;
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem;
+    box-shadow: 2px 1px 3px #FEFDF9;
+}
+
+section.closingNote div.closingNoteContent div.closingNoteParagraph {
+    height: 172.2px;
+    font-size: 24px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+}
+
+/* -------KINGDOM EVENT PUBLICITY------- */
+section.KEP {
+    font-family: 'Abhaya Libre', serif;
+    color: #122B44;
+    padding: 0.3rem 0.3rem;
+    margin:  2.3rem 3.5rem 1.3rem 3.5rem;
+    display: none;
+}
+
+section.KEP .KEPframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2feac1;
+    padding-bottom: 1.2rem;
+}
+
+section.KEP .KEPframe .KEPcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.KEP .KEPframe .KEPcontent h1 {
+    width: 65vw;
+    font-size: 32px;
+    text-align: center;
+    padding: 0rem 5rem;
+    margin: 1rem 0rem 0.7rem 0rem;
+}
+
+section.KEP .KEPframe .KEPcontent video {
+    width: 65vw;
+    height: 63vh;
+    cursor: pointer;
+    background: url(JPEG/background4.jpg);
+    border: none;
+}
+
+.bottomFrame {
+    width: 65vw;
+    height: 1.7rem;
+    background: url(JPEG/background4.jpg);
+    margin: 0.3rem 0rem 0.3rem 0rem;
+}
+
+.screenStand {
+    width: 27%;
+    height: 2.1rem;
+    background: url(JPEG/background3.jpg);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: -0.3rem;
+}
+
+/* -------FOOTER------- */
+footer {
+    background-color: #26BD9C;
+    display: flex;
+    flex-direction: column;
+    color: #122B44;
+    padding: 1rem 1rem;
+    margin-top: 3rem;
+}
+
+footer div.footerLogo {
+    text-align: center;
+}
+
+footer div.footerLogo img {
+    width: 90px;
+    height: 86.5px;
+}
+
+footer div.footerPortContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+footer div.footerPortContainer h4 {
+    font-size: 23px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+footer div.footerPortContainer ul {
+    list-style: none;
+}
+
+footer div.footerPortContainer ul li a {
+    width: 8rem;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    margin-top: 0.7rem;
+}
+
+footer div.footerPortContainer ul li a:hover {
+    background-color: #125754;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+footer div.footerPortContainer ul li a.active {
+    color: #122B44;
+}
+
+footer div.footerPortContainer ul li a img {
+    width: 16.5px;
+    height: 16.5px;
+    margin-right: 0.35rem;
+}
+
+footer div.footerPortContainer ul li a p {
+    font-size: 21px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+footer p#copyright {
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Abhaya Libre', serif;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    background: url(JPEG/background3.jpg);
+    color: white;
+}
+
+
+
+/* ---MEDIA QUERY FOR 1450PX OF WIDTH--- */
+@media(max-width: 1450px) {
+
+/* -------Header( Navigation Menu )------- */
+header {
+    box-shadow: 0px 0.12px 2px white;
+}
+
+header div.logoAndMenuBar {
+    width: 2.9rem;
+    height: 2.6rem;
+    padding: 0.2rem 0.4rem;
+    margin: 0.25rem 0rem 0rem 0rem;
+}
+
+header div.logoAndMenuBar a img#logo {
+    width: 2.5rem;
+    height: 2.3rem;
+}
+
+header nav ul a li {
+    padding: 0rem 0.2rem -0.2rem 0.2rem;
+    margin: 0.7rem 1.4rem 0.2rem 1.4rem;
+    font-size: 11.9px;
+    border-radius: 13px;
+}
+
+header nav ul a li:after {
+    margin-top: 0.1rem;
+}
+
+header nav ul a li:hover:after {
+    width: 100%;
+}
+
+header nav ul a li.active:after {
+    margin-top: 0.1rem;
+}
+
+/* -------Platform Welcome Message------- */
+
+div.platformWelcomeMessage h1 {
+    font-size: 37px;
+}
+
+div.platformWelcomeMessage h4 {
+    font-size: 13px;
+}
+
+div.platformWelcomeMessage div#welcomeImage img {
+    width: 415px;
+    height: 284.23px;
+}
+
+div.platformWelcomeMessage p {
+    font-size: 17px;
+}
+
+/* -------The Bridge Section------- */
+
+section.theBridgeSection h3 {
+    font-size: 26px;
+}
+
+section.theBridgeSection div.theBridgeContent img {
+    width: 215px;
+    height: 158.2px;
+}
+
+section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
+    font-size: 19px;
+    padding: 0.5rem 0.5rem;
+}
+
+/* -------How To Use The Platform------- */
+
+section.howToUseThePlatform div.hTUTPContent h3 {
+    font-size: 26px;
+    padding: 0.2rem 0.3rem;
+    margin: 2.8rem 1.5rem 0.4rem 1.5rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent #imgAS {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 94vw;
+    top: 10vh;
+    z-index: 8;
+    background-color: rgb(139, 10, 10);
+    border-radius: 50%;
+    padding: 2.5px 2.5px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    display: none;
+}
+
+#imgLS, #imgMS, #imglS {
+    display: none;
+}
+
+section.howToUseThePlatform div.hTUTPContent #imgAS:hover {
+    background-color: #122B44;
+    border: 1.5px solid white;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps {
+    border: 2px solid white;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0.7rem 0rem 0.8rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps h4 {
+    font-size: 20px;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg {
+    height: 145px;
+    margin: 0.1rem 0rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg .iReplica {
+    width: 310px;
+    margin-right: 0.5rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img1450MQ {
+    display: block;
+    width: 310px;
+    height: 130px;
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img1450MQ:hover {
+    border: 1px solid white;
+    box-shadow: 2px 2px 3px #2feac1;
+    transform: scale(1.03);
+}
+
+.stepsPImg,
+.img685MQ,
+.img359MQ {
+    display: none;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN {
+    padding: 0.1rem 0.5rem;
+}
+
+section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
+    font-size: 19px;
+}
+ 
+/* -------Boat, Aircraft and Automotive News------- */
+
+section h3 {
+    font-size: 26px;
+}
+
+section div.news div.swiper div.img button.preBtn {
+    margin-left: 2.3rem;
+    margin-right: 1rem;
+}
+
+section div.news div.swiper div.img button.nxtBtn {
+    margin-right: 2.3rem;
+    margin-left: 1rem;
+}
+
+section div.news div.swiper div.img  button img {
+    width: 2rem;
+    height: 2.1rem;
+}
+
+.gate {
+    width: 3.5rem;
+    height: 14.9rem;
+}
+
+#leftGate {
+    left: 12.2%;
+}
+
+#rightGate {
+    right: 12.2%;
+}
+
+section div.news div.swiper div.swiperWrapper {
+    width: 75%;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkImg img {
+    width: 8rem;
+    height: 8rem;
+}
+
+section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p {
+    font-size: 17px;
+}
+
+
+/* -------Closing Note------- */
+
+section.closingNote div.closingNoteContent img {
+    width: 215px;
+    height: 158.2px;
+}
+
+section.closingNote div.closingNoteContent div.closingNoteParagraph {
+    font-size: 19px;
+}
+
+/* -------KINGDOM EVENT PUBLICITY------- */
+section.KEP {
+    padding: 0.2rem 0.2rem;
+    margin:  1.7rem 0rem 0.8rem 0rem;
+}
+
+section.KEP .KEPframe .KEPcontent h1 {
+    width: 87%;
+    font-size: 27px;
+    padding: 0.2rem 0.2rem;
+    margin: 1rem 0rem 0.3rem 0rem;
+}
+
+section.KEP .KEPframe .KEPcontent video {
+    width: 91%;
+    height: 37vh;
+}
+
+.bottomFrame {
+    width: 91%;
+    height: 1rem;
+    margin: 0.23rem 0rem 0.23rem 0rem;
+}
+
+.screenStand {
+    width: 27%;
+    height: 1.8rem;
+    margin-top: -0.23rem;
+}
+
+/* -------FOOTER------- */
+
+footer div.footerLogo img {
+    width: 80px;
+    height: 76.9px;
+}
+
+footer div.footerPortContainer h4 {
+    font-size: 18px;
+}
+
+footer div.footerPortContainer ul li a:hover {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+footer div.footerPortContainer ul li a img {
+    width: 15px;
+    height: 15px;
+}
+
+footer div.footerPortContainer ul li a p {
+    font-size: 15px;
+}
+
+footer p#copyright {
+    font-size: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
+/* ---MEDIA QUERY FOR 685PX OF WIDTH--- */
+@media(max-width: 685px) {
+
+    /* -------Header( Navigation Menu )------- */
+    header {
+        display: inline-block;
+        height: 2.3rem;
+    }
+
+    header div.logoAndMenuBar {
+        padding: 0.1rem 0.4rem;
+        margin-top: 0.1rem 0rem;
+    }
+
+    header div.logoAndMenuBar a img#logo {
+        width: 2.1rem;
+        height: 1.9rem;
+    }
+
+    header nav {
+        width: 0%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
+        margin-top: 0px;
+        background: url(JPEG/background4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+        transition: 1.2s;
+    }
+
+    header nav ul {
+        margin-top: 2rem;
+    }
+
+    header nav ul a li {
+        width: 8rem;
+        background-color: #26BD9C;
+        margin-top: 2.25rem;
+        margin-left: 1rem;
+        padding: 0rem 0.2rem;
+        font-family: 'Eczar', serif;
+        font-size: 14px;
+    }
+
+    header nav ul a li.active {
+        background-color: #122B44;
+    }
+
+    header nav ul a li:active {
+        background-color: #32f3c9;
+    }
+
+    header nav ul a li:after {
+        content: '';
+        display: none;
+    }
+
+    header nav ul a li.active:after {
+        content: '';
+        display: none;
+    }
+
+    header nav ul li a:hover {
+        color: white;
+    }
+
+    header div.logoAndMenuBar img.menuBar {
+        width: 1.3rem;
+        height: 1.3rem;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 0rem;
+        top: 0rem;
+        margin: 0.5rem 0.6rem 1rem 0rem;
+    }
+
+    header div.logoAndMenuBar img#close {
+        display: none;
+    }
+
+    /* -------Platform Welcome Message------- */
+    div.platformWelcomeMessage {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 8.7rem;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    div.platformWelcomeMessage h1 {
+        font-size: 28.5px;
+    }
+
+    div.platformWelcomeMessage h4 {
+        font-size: 12.5px;
+    }
+
+    div.platformWelcomeMessage h1 span#targetWelcome {
+        color: #122B44;
+    }
+
+    div.platformWelcomeMessage div#welcomeImage img {
+        width: 300px;
+        height: 205.5px;
+    }
+
+    div.platformWelcomeMessage p {
+        font-size: 13.5px;
+    }
+
+    /* -------The Bridge Section------- */
+    section.theBridgeSection {
+        margin-top: 0.7rem;
+    }
+
+    section.theBridgeSection h3 {
+        line-height: 1.7rem;
+        font-size: 20.5px;
+    }
+
+    section.theBridgeSection div.theBridgeContent {
+        display: block;
+        margin-top: 0.7rem;
+    }
+
+    section.theBridgeSection div.theBridgeContent img {
+        width: 75%;
+        height: 67px;
+        padding: 0.1rem 0.4rem;
+        border-radius: 50%;
+    }
+
+    section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
+        height: auto;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0.8rem;
+    }
+
+    /* -------How To Use The Platform------- */
+    
+    section.howToUseThePlatform div.hTUTPContent h3 {
+        line-height: 1.7rem;
+        font-size: 20.5px;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent #imgMS {
+        width: 25px;
+        height: 25px;
+        position: fixed;
+        left: 90vw;
+        top: 11vh;
+        z-index: 8;
+        background-color: rgb(139, 10, 10);
+        padding: 2px 2px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #imgLS, #imgAS, #imglS {
+        display: none;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent #imgMS:hover {
+        background-color: #122B44;
+        border: 1px solid white;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps {
+        border: 1px solid white;
+        padding: 0.3rem 0.3rem;
+        margin: 1rem 0.8rem 0rem 0.8rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps h4 {
+        font-size: 17px;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg {
+        height: 115px;
+        margin: 0.2rem 0rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg .iReplica {
+        width: 130px;
+        margin-right: 0.7rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img685MQ {
+        width: 130px;
+        height: 78px;
+        position: absolute;
+        border: 1px solid grey;
+        border-radius: 3px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img1450MQ {
+        display: none;
+    }
+    .stepsPImg,
+    .img359MQ {
+        display: none;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN {
+        padding: 0.1rem 0rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
+        font-size: 15px;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p span#MediaQ359 {
+        display: block;
+    }
+
+    /* -------Boat, Aircraft and Automotive News------- */
+    section h3 {
+        line-height: 1.7rem;
+        font-size: 20.5px;
+        padding: 0.3rem 1rem;
+        margin: 0rem 0.7rem;
+    }
+
+    section div.news div.swiper div.img button.preBtn {
+        margin-left: 0.4rem;
+        margin-right: 0.5rem;
+    }
+    
+    section div.news div.swiper div.img button.nxtBtn {
+        margin-right: 0.4rem;
+        margin-left: 0.5rem;
+    }
+
+    section div.news div.swiper div.img  button img {
+        width: 1.4rem;
+        height: 1.5rem;
+        padding: 0.2rem;
+    }
+
+    .gate {
+        width: 1.5rem;
+        height: 10.8rem;
+    }
+    
+    #leftGate {
+        left: 10.5%;
+    }
+    
+    #rightGate {
+        right: 10.5%;
+    }
+
+    section div.news div.swiper div.swiperWrapper {
+        width: 79%;
+        padding: 0.9rem 0rem 1.2rem 0.6rem;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide {
+        border-radius: 14px;
+        margin-right: 0.6rem;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkImg img {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-bottom: 0.2rem;
+        border: 2px solid #26BD9C;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle {
+        height: 1.6rem;
+        border-radius: 4px;
+        padding: 1rem 0.1rem;
+        border: 1px solid #26BD9C;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p {
+        font-size: 14.5px;
+    }
+
+    /* -------Closing Note------- */
+    section.closingNote {
+        margin-top: 3.5rem;
+    }
+
+    section.closingNote div.closingNoteContent {
+        display: block;
+        margin-top: 0.7rem;
+    }
+
+    section.closingNote div.closingNoteContent img {
+        width: 75%;
+        height: 67px;
+        padding: 0.1rem 0.4rem;
+        border-radius: 50%;
+    }
+
+    section.closingNote div.closingNoteContent div.closingNoteParagraph {
+        height: auto;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+    }
+
+    /* -------KINGDOM EVENT PUBLICITY------- */
+section.KEP {
+    padding: 0.3rem 0.3rem;
+    margin:  2.3rem 0.2rem 1.3rem 0.2rem;
+}
+
+section.KEP .KEPframe .KEPcontent h1 {
+    width: 93%;
+    font-size: 18.5px;
+    margin: 1rem 0rem 0.2rem 0rem;
+}
+
+section.KEP .KEPframe .KEPcontent video {
+    width: 93%;
+    height: 23vh;
+}
+
+.bottomFrame {
+    width: 93%;
+    height: 0.5rem;
+    margin: 0.15rem 0rem 0.15rem 0rem;
+}
+
+.screenStand {
+    width: 27%;
+    height: 1rem;
+    margin-top: -0.15rem;
+}
+
+    /* -------Footer------- */
+    footer {
+        padding: 0.5rem 0.5rem;
+        margin-top: 1rem;
+    }
+
+    footer div.footerLogo img {
+        width: 58px;
+        height: 55.5px;
+    }
+
+    footer div.footerPortContainer {
+        padding: 0.7rem 1rem;
+    }
+
+    footer div.footerPortContainer h4 {
+        font-size: 16.5px;
+    }
+
+    footer div.footerPortContainer ul li a {
+        width: 5rem;
+        margin-top: 0.7rem;
+    }
+
+    footer div.footerPortContainer ul li a img {
+        width: 14.5px;
+        height: 14.5px;
+    }
+
+    footer div.footerPortContainer ul li a p {
+        font-size: 13.5px;
+    }
+
+    footer p#copyright {
+        font-size: 13.5px;
+        padding: 0.3rem;
+        margin-top: 0.3rem;
+    }
+
+}
+
+
+
+
+
+/* ---MEDIA QUERY FOR 359PX OF WIDTH--- */
+@media(max-width: 359px) {
+
+    /* -------Header( Navigation Menu )------- */
+    header {
+        height: 2.1rem;
+    }
+
+    header div.logoAndMenuBar a img#logo {
+        width: 1.8rem;
+        height: 1.6rem;
+    }
+
+    header nav ul a li {
+        font-size: 13px;
+    }
+
+    /* -------Platform Welcome Message------- */
+    div.platformWelcomeMessage {
+        margin-top: 7.2rem;
+    }
+
+    div.platformWelcomeMessage h1 {
+        font-size: 22.3px;
+    }
+
+    div.platformWelcomeMessage h4 {
+        font-size: 11.8px;
+    }
+
+    div.platformWelcomeMessage h1 span#targetWelcome {
+        color: #122B44;
+    }
+
+    div.platformWelcomeMessage div#welcomeImage img {
+        width: 237px;
+        height: 162.3px;
+    }
+
+    div.platformWelcomeMessage p {
+        font-size: 11.8px;
+    }
+
+    /* -------The Bridge Section------- */
+    section.theBridgeSection h3 {
+        line-height: 1.6rem;
+        font-size: 19.8px;
+    }
+
+    section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
+        font-size: 14.3px;
+    }
+
+    /* -------How To Use The Platform------- */
+    
+    section.howToUseThePlatform div.hTUTPContent h3 {
+        line-height: 1.6rem;
+        font-size: 19.8px;
+        margin: 2.8rem 1rem 0.3rem 1rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent #imglS {
+        width: 22px;
+        height: 22px;
+        position: fixed;
+        left: 90vw;
+        top: 10vh;
+        z-index: 8;
+        background-color: rgb(139, 10, 10);
+        padding: 2px 2px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #IMGLS, #imgAS, #imgMS {
+        display: none;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent #imglS:hover {
+        background-color: #122B44;
+        border: 1px solid white;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps {
+        border: 1px solid white;
+        padding: 0.3rem 0rem 0.1rem 0.1;
+        margin: 1rem 0.3rem 0rem 0.3rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps h4 {
+        font-size: 16.3px;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg {
+        height: 158px;
+        margin: 0.2rem 0.2rem 0.2rem 0rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg .iReplica {
+        width: 120px;
+        margin: 0rem 0.1rem 0rem 0rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img359MQ {
+        width: 120px;
+        height: 72px;
+        position: absolute;
+        border: 1px solid grey;
+        border-radius: 3px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.stepsPImg,
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img1450MQ,
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img685MQ {
+        display: none;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN {
+        padding: 0.1rem 0rem;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
+        font-size: 14.3px;
+    }
+    
+    section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p span#MediaQ359 {
+        display: inline;
+    }
+
+    /* -------Boat, Aircraft and Automotive News------- */
+    section h3 {
+        line-height: 1.6rem;
+        font-size: 19.8px;
+    }
+
+    section div.news div.swiper div.img button.preBtn {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+    
+    section div.news div.swiper div.img button.nxtBtn {
+        margin-right: 0.3rem;
+        margin-left: 0.3rem;
+    }
+
+    section div.news div.swiper div.img  button img {
+        width: 1rem;
+        height: 1.1rem;
+        padding: 0.16rem;
+    }
+
+    .gate {
+        width: 1.3rem;
+        height: 10.3rem;
+    }
+    
+    #leftGate {
+        left: 10.5%;
+    }
+    
+    #rightGate {
+        right: 10.5%;
+    }
+
+    section div.news div.swiper div.swiperWrapper {
+        padding: 0.9rem 0rem 1.2rem 0.7rem;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide {
+        border-radius: 12px;
+        margin-right: 0.6rem;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkImg img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle {
+        height: 1.2rem;
+    }
+
+    section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p {
+        font-size: 13.8px;
+    }
+
+    /* -------Closing Note------- */
+    section.closingNote {
+        margin-top: 2rem;
+    }
+
+    section.closingNote div.closingNoteContent div.closingNoteParagraph {
+        font-size: 14.3px;
+    }
+
+    /* -------KINGDOM EVENT PUBLICITY------- */
+    section.KEP {
+        padding: 0.3rem 0.3rem;
+        margin:  2.3rem 0.2rem 1.3rem 0.2rem;
+    }
+    
+    section.KEP .KEPframe .KEPcontent h1 {
+        width: 93%;
+        font-size: 18.8px;
+        margin: 1rem 0rem 0.2rem 0rem;
+    }
+    
+    section.KEP .KEPframe .KEPcontent video {
+        width: 93%;
+        height: 21vh;
+    }
+    
+    .bottomFrame {
+        width: 93%;
+        height: 0.3rem;
+        margin: 0.13rem 0rem 0.13rem 0rem;
+    }
+
+    .screenStand {
+        width: 27%;
+        height: 0.7rem;
+        margin-top: -0.13rem;
+    }
+
+    /* -------footer------- */
+    footer {
+        padding: 0.5rem 0.25rem;
+    }
+
+    footer div.footerLogo img {
+        width: 50px;
+        height: 47.8px;
+    }
+
+    footer div.footerPortContainer {
+        padding: 0.7rem 0rem;
+    }
+
+    footer div.footerPortContainer h4 {
+        font-size: 13.8px;
+    }
+
+    footer div.footerPortContainer ul li a {
+        width: 4.6rem;
+        margin-top: 0.7rem;
+    }
+
+    footer div.footerPortContainer ul li a img {
+        width: 13.5px;
+        height: 13.5px;
+    }
+
+    footer div.footerPortContainer ul li a p {
+        font-size: 12.3px;
+    }
+
+    footer p#copyright {
+        font-size: 12.3px;
+        margin-top: 0.3rem;
+    }
+}
