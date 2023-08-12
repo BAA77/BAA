@@ -111,17 +111,6 @@ header nav ul a li:after {
     transition: 0.3s;
 }
 
-header nav ul a li#act:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 100%;
-    margin-top: 0.3rem;
-    background-color: #122B44;
-    box-shadow: 1px 1px 7px white;
-    transition: 0.3s;
-}
-
 header nav ul a li:hover:after {
     width: 100%;
 }
