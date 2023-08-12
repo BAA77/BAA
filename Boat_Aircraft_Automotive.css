@@ -247,7 +247,7 @@ section.theBridgeSection {
 
 section.theBridgeSection h3 {
     font-family: 'Eczar', serif;
-    font-size: 31px;
+    font-size: 27px;
     line-height: 2rem;
     margin: 0rem 0rem 0.1rem 0rem;
 }
@@ -265,7 +265,7 @@ section.theBridgeSection div.theBridgeContent img {
 
 section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
     height: 172.2px;
-    font-size: 24px;
+    font-size: 21px;
     display: flex;
     text-align: left;
     align-items: center;
