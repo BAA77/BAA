@@ -46,6 +46,7 @@ div#backsplash {
 header {
     background-color: #26BD9C;
     width: 100%;
+    height: 2.8rem;
     top: 0;
     position: fixed;
     display: flex;
@@ -67,8 +68,8 @@ header div.logoAndMenuBar a {
 }
 
 header div.logoAndMenuBar a img#logo {
-    width: 3.2rem;
-    height: 2.9rem;
+    width: 2.8rem;
+    height: 2.5rem;
     margin: 0rem auto;
 }
 
@@ -87,9 +88,9 @@ header nav ul a {
 
 header nav ul a li {
     padding: 0.5rem 0.5rem 0rem 0.5rem;
-    margin: 0.7rem 1.7rem 0.2rem 1.7rem;
+    margin: 0.4rem 1.7rem 0.2rem 1.7rem;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.2rem;
     border-radius: 15px;
     box-shadow: 1px 1px 5px white;
@@ -104,6 +105,17 @@ header nav ul a li:after {
     display: block;
     height: 3px;
     width: 0%;
+    margin-top: 0.3rem;
+    background-color: #122B44;
+    box-shadow: 1px 1px 7px white;
+    transition: 0.3s;
+}
+
+header nav ul a li#act:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
     margin-top: 0.3rem;
     background-color: #122B44;
     box-shadow: 1px 1px 7px white;
@@ -144,7 +156,7 @@ div.platformWelcomeMessage {
 }
 
 div.platformWelcomeMessage h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Abhaya Libre', serif;
     animation-name: slide;
     animation-duration: 0.7s;
@@ -165,7 +177,7 @@ div.platformWelcomeMessage h1 span#targetWelcome {
 }
 
 div.platformWelcomeMessage h4 {
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Abhaya Libre', serif;
     animation-name: slide;
     animation-duration: 1.3s;
@@ -173,8 +185,8 @@ div.platformWelcomeMessage h4 {
 }
 
 div.platformWelcomeMessage div#welcomeImage img {
-    width: 445px;
-    height: 304.78px;
+    width: 395px;
+    height: 270.5px;
     animation-name: appear;
     animation-duration: 2.3s;
     animation-iteration-count: 1;
@@ -201,7 +213,7 @@ div.platformWelcomeMessage div#welcomeImage img {
 }
 
 div.platformWelcomeMessage p {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Abhaya Libre', serif;
     width: 75%;
     padding: 0.1rem 0.1rem;
