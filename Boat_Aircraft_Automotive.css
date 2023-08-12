@@ -284,7 +284,7 @@ section.howToUseThePlatform div.hTUTPContent {
 section.howToUseThePlatform div.hTUTPContent h3 {
     text-align: center;
     font-family: 'Eczar', serif;
-    font-size: 31px;
+    font-size: 27px;
     line-height: 2rem;
     padding: 0.2rem 0.3rem;
     margin: 2.8rem 0rem 0.4rem 0rem;
@@ -328,7 +328,7 @@ section.howToUseThePlatform div.hTUTPContent div.steps {
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps h4 {
-    font-size: 25px;
+    font-size: 23px;
     color: #122B44;
 }
 
@@ -380,7 +380,7 @@ section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN {
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
-    font-size: 24px;
+    font-size: 21px;
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p span#MediaQ359 {
@@ -396,7 +396,7 @@ section {
 section h3 {
     text-align: center;
     font-family: 'Eczar', serif;
-    font-size: 31px;
+    font-size: 27px;
     line-height: 2rem;
     padding: 0.1rem;
     margin-bottom: 1.6rem;
@@ -549,7 +549,7 @@ section.closingNote div.closingNoteContent img {
 
 section.closingNote div.closingNoteContent div.closingNoteParagraph {
     height: 172.2px;
-    font-size: 24px;
+    font-size: 21px;
     display: flex;
     text-align: left;
     align-items: center;
@@ -563,7 +563,7 @@ section.KEP {
     color: #122B44;
     padding: 0.3rem 0.3rem;
     margin:  2.3rem 3.5rem 1.3rem 3.5rem;
-    display: none;
+    display: block;
 }
 
 section.KEP .KEPframe {
@@ -584,7 +584,7 @@ section.KEP .KEPframe .KEPcontent {
 
 section.KEP .KEPframe .KEPcontent h1 {
     width: 65vw;
-    font-size: 32px;
+    font-size: 27px;
     text-align: center;
     padding: 0rem 5rem;
     margin: 1rem 0rem 0.7rem 0rem;
@@ -629,8 +629,8 @@ footer div.footerLogo {
 }
 
 footer div.footerLogo img {
-    width: 90px;
-    height: 86.5px;
+    width: 84px;
+    height: 80.7px;
 }
 
 footer div.footerPortContainer {
@@ -640,7 +640,7 @@ footer div.footerPortContainer {
 }
 
 footer div.footerPortContainer h4 {
-    font-size: 23px;
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
 }
 
@@ -653,6 +653,7 @@ footer div.footerPortContainer ul li a {
     text-decoration: none;
     color: white;
     display: inline-flex;
+    align-items: center;
     margin-top: 0.7rem;
 }
 
@@ -673,13 +674,13 @@ footer div.footerPortContainer ul li a img {
 }
 
 footer div.footerPortContainer ul li a p {
-    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
+    font-size: 18px;
 }
 
 footer p#copyright {
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
     font-family: 'Abhaya Libre', serif;
     padding: 0.3rem;
     margin-top: 0.3rem;
