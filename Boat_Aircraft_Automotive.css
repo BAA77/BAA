@@ -732,20 +732,20 @@ header nav ul a li.active:after {
 /* -------Platform Welcome Message------- */
 
 div.platformWelcomeMessage h1 {
-    font-size: 37px;
+    font-size: 31px;
 }
 
 div.platformWelcomeMessage h4 {
-    font-size: 13px;
+    font-size: 9px;
 }
 
 div.platformWelcomeMessage div#welcomeImage img {
-    width: 415px;
-    height: 284.23px;
+    width: 382px;
+    height: 213.2px;
 }
 
 div.platformWelcomeMessage p {
-    font-size: 17px;
+    font-size: 16.2px;
 }
 
 /* -------The Bridge Section------- */
