@@ -364,8 +364,8 @@ footer div.footerLogo {
 }
 
 footer div.footerLogo img {
-    width: 90px;
-    height: 86.5px;
+    width: 84px;
+    height: 80.7px;
 }
 
 footer div.footerPortContainer {
@@ -375,7 +375,7 @@ footer div.footerPortContainer {
 }
 
 footer div.footerPortContainer h4 {
-    font-size: 23px;
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
 }
 
@@ -388,6 +388,7 @@ footer div.footerPortContainer ul li a {
     text-decoration: none;
     color: white;
     display: inline-flex;
+    align-items: center;
     margin-top: 0.7rem;
 }
 
@@ -408,13 +409,13 @@ footer div.footerPortContainer ul li a img {
 }
 
 footer div.footerPortContainer ul li a p {
-    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
+    font-size: 18px;
 }
 
 footer p#copyright {
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
     font-family: 'Abhaya Libre', serif;
     padding: 0.3rem;
     margin-top: 0.3rem;
