@@ -621,7 +621,7 @@ footer {
     flex-direction: column;
     color: #122B44;
     padding: 1rem 1rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 footer div.footerLogo {
@@ -691,7 +691,7 @@ footer p#copyright {
 
 
 /* ---MEDIA QUERY FOR 1450PX OF WIDTH--- */
-@media(max-width: 14500px) {
+@media(max-width: 1450px) {
 
 /* -------Header( Navigation Menu )------- */
 header {
