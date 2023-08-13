@@ -145,7 +145,7 @@ header div.logoAndMenuBar img.menuBar {
 /* -------Form------- */
 section.boatSearch {
     font-family: 'Abhaya Libre', serif;
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
