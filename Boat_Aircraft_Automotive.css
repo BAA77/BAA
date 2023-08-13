@@ -713,7 +713,7 @@ header div.logoAndMenuBar a img#logo {
 header nav ul a li {
     padding: 0rem 0.2rem -0.2rem 0.2rem;
     margin: 0.7rem 1.4rem 0.2rem 1.4rem;
-    font-size: 13px;
+    font-size: 14px;
     border-radius: 13px;
 }
 
@@ -741,7 +741,7 @@ div.platformWelcomeMessage h4 {
 
 div.platformWelcomeMessage div#welcomeImage img {
     width: 382px;
-    height: 213.2px;
+    height: 223.2px;
 }
 
 div.platformWelcomeMessage p {
