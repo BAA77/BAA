@@ -129,8 +129,8 @@ section.object {
 }
 
 section.object div.logo {
-    width: 11.7rem;
-    height: 11.7rem;
+    width: 9.7rem;
+    height: 9.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,8 +140,8 @@ section.object div.logo {
 }
 
 section.object div.logo img {
-    width: 11.7rem;
-    height: 11.7rem;
+    width: 9.7rem;
+    height: 9.7rem;
     border-radius: 50%;
 }
 
@@ -294,13 +294,13 @@ section.object {
 }
 
 section.object div.logo {
-    width: 10.4rem;
-    height: 10.4rem;
+    width: 7.4rem;
+    height: 7.4rem;
 }
 
 section.object div.logo img {
-    width: 10.4rem;
-    height: 10.4rem;
+    width: 7.4rem;
+    height: 7.4rem;
 }
 
 section.object div.objectPosterity {
