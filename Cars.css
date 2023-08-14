@@ -140,7 +140,7 @@ header div.logoAndMenuBar img.menuBar {
 /* -------Form------- */
 section.automotiveSearch {
     font-family: 'Abhaya Libre', serif;
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -153,15 +153,15 @@ section.automotiveSearch {
 section.automotiveSearch h1 {
     width: 90%;
     font-family: 'Eczar', serif;
-    font-size: 31px;
+    font-size: 29px;
     line-height: 2rem;
     color: rgb(222, 222, 222);
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 section.automotiveSearch p {
-    font-size: 23.5px;
+    font-size: 20.5px;
     text-align: center;
     cursor: pointer;
     border: 2px solid white;
@@ -208,7 +208,7 @@ section.automotiveSearch form div.formEntrance label.sARLabel {
 
 section.automotiveSearch form div.formEntrance label {
     width: 9rem;
-    font-size: 25px;
+    font-size: 24px;
     cursor: pointer;
     text-align: center;
     background-color: #26BD9C;
@@ -224,7 +224,7 @@ section.automotiveSearch form div.formEntrance textarea {
     width: 40vw;
     height: 12rem;
     font-family: 'Abhaya Libre', serif;
-    font-size: 23px;
+    font-size: 20px;
     padding: 0.1rem 0.2rem;
     outline: none;
     background-color: aliceblue;
@@ -234,7 +234,7 @@ section.automotiveSearch form div.formEntrance textarea {
 
 section.automotiveSearch form div.importNote {
     width: 75%;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
     margin: 0.8rem 0rem;
 }
@@ -266,14 +266,15 @@ section.automotiveSearch form div.formEntrance button {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 2rem;
-    background-color: silver;
+    color: white;
+    background-color: rgb(14, 14, 14);
     box-shadow: 0px 0px 5px white;
     transition: 0.5s;
 }
 
 section.automotiveSearch form div.formEntrance button:hover {
-    color: white;
-    background-color: rgb(14, 14, 14);
+    color: rgb(14, 14, 14);
+    background-color: white;
 }
 
 section.automotiveSearch form div.formEntrance div.popUp{
@@ -300,7 +301,7 @@ section.automotiveSearch form div.formEntrance div.popUp img{
 
 section.automotiveSearch form div.formEntrance div.popUp h3{
     color: black;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 13px;
 }
