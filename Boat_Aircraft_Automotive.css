@@ -1101,7 +1101,7 @@ footer p#copyright {
 
     section.theBridgeSection h3 {
         line-height: 1.7rem;
-        font-size: 20.5px;
+        font-size: 21.5px;
     }
 
     section.theBridgeSection div.theBridgeContent {
@@ -1118,7 +1118,7 @@ footer p#copyright {
 
     section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
         height: auto;
-        font-size: 15px;
+        font-size: 17px;
         display: block;
         text-align: center;
         padding: 0.5rem 0.8rem;
@@ -1128,7 +1128,7 @@ footer p#copyright {
     
     section.howToUseThePlatform div.hTUTPContent h3 {
         line-height: 1.7rem;
-        font-size: 20.5px;
+        font-size: 21.5px;
     }
     
     section.howToUseThePlatform div.hTUTPContent #imgMS {
@@ -1198,7 +1198,7 @@ footer p#copyright {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
-        font-size: 15px;
+        font-size: 17px;
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p span#MediaQ359 {
@@ -1208,7 +1208,7 @@ footer p#copyright {
     /* -------Boat, Aircraft and Automotive News------- */
     section h3 {
         line-height: 1.7rem;
-        font-size: 20.5px;
+        font-size: 21.5px;
         padding: 0.3rem 1rem;
         margin: 0rem 0.7rem;
     }
@@ -1267,7 +1267,7 @@ footer p#copyright {
     }
 
     section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p {
-        font-size: 14.5px;
+        font-size: 15.5px;
     }
 
     /* -------Closing Note------- */
@@ -1289,7 +1289,7 @@ footer p#copyright {
 
     section.closingNote div.closingNoteContent div.closingNoteParagraph {
         height: auto;
-        font-size: 15px;
+        font-size: 17px;
         display: block;
         text-align: center;
         padding: 0.5rem 0.5rem;
@@ -1303,7 +1303,7 @@ section.KEP {
 
 section.KEP .KEPframe .KEPcontent h1 {
     width: 93%;
-    font-size: 18.5px;
+    font-size: 19.5px;
     margin: 1rem 0rem 0.2rem 0rem;
 }
 
