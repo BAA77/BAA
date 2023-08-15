@@ -655,13 +655,13 @@ footer p#copyright {
     section.boatSearch h1 {
         line-height: 1.7rem;
         font-size: 24.5px;
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.5rem;
     }
 
     section.boatSearch p {
         width: 95%;
         font-size: 18.5px;
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.5rem;
     }
 
     section.boatSearch p a {
