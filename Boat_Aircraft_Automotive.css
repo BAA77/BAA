@@ -1062,7 +1062,6 @@ footer p#copyright {
         display: none;
     }
 
-    /* -------Platform Welcome Message------- */
     div.platformWelcomeMessage {
         color: white;
         display: flex;
@@ -1074,7 +1073,7 @@ footer p#copyright {
     }
 
     div.platformWelcomeMessage h1 {
-        font-size: 28.5px;
+        font-size: 29px;
     }
 
     div.platformWelcomeMessage h4 {
@@ -1086,8 +1085,8 @@ footer p#copyright {
     }
 
     div.platformWelcomeMessage div#welcomeImage img {
-        width: 300px;
-        height: 205.5px;
+        width: 310px;
+        height: 225.5px;
     }
 
     div.platformWelcomeMessage p {
@@ -1101,7 +1100,7 @@ footer p#copyright {
 
     section.theBridgeSection h3 {
         line-height: 1.7rem;
-        font-size: 22px;
+        font-size: 23.5px;
     }
 
     section.theBridgeSection div.theBridgeContent {
@@ -1118,7 +1117,7 @@ footer p#copyright {
 
     section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
         height: auto;
-        font-size: 18px;
+        font-size: 19px;
         display: block;
         text-align: center;
         padding: 0.5rem 0.8rem;
@@ -1128,7 +1127,7 @@ footer p#copyright {
     
     section.howToUseThePlatform div.hTUTPContent h3 {
         line-height: 1.7rem;
-        font-size: 22px;
+        font-size: 23.5px;
     }
     
     section.howToUseThePlatform div.hTUTPContent #imgMS {
@@ -1162,7 +1161,7 @@ footer p#copyright {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps h4 {
-        font-size: 17.5px;
+        font-size: 18px;
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg {
@@ -1177,7 +1176,7 @@ footer p#copyright {
     
     section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img685MQ {
         width: 130px;
-        min-height: 78px;
+        height: 78px;
         position: absolute;
         border: 1px solid grey;
         border-radius: 3px;
@@ -1198,7 +1197,7 @@ footer p#copyright {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
-        font-size: 18px;
+        font-size: 19px;
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p span#MediaQ359 {
@@ -1208,7 +1207,7 @@ footer p#copyright {
     /* -------Boat, Aircraft and Automotive News------- */
     section h3 {
         line-height: 1.7rem;
-        font-size: 22px;
+        font-size: 23.5px;
         padding: 0.3rem 1rem;
         margin: 0rem 0.7rem;
     }
@@ -1235,15 +1234,15 @@ footer p#copyright {
     }
     
     #leftGate {
-        left: 10.5%;
+        left: 15%;
     }
     
     #rightGate {
-        right: 10.5%;
+        right: 15%;
     }
 
     section div.news div.swiper div.swiperWrapper {
-        width: 79%;
+        width: 70%;
         padding: 0.9rem 0rem 1.2rem 0.6rem;
     }
 
@@ -1267,7 +1266,7 @@ footer p#copyright {
     }
 
     section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p {
-        font-size: 16px;
+        font-size: 16.5px;
     }
 
     /* -------Closing Note------- */
@@ -1289,7 +1288,7 @@ footer p#copyright {
 
     section.closingNote div.closingNoteContent div.closingNoteParagraph {
         height: auto;
-        font-size: 18px;
+        font-size: 19px;
         display: block;
         text-align: center;
         padding: 0.5rem 0.5rem;
@@ -1303,7 +1302,7 @@ section.KEP {
 
 section.KEP .KEPframe .KEPcontent h1 {
     width: 93%;
-    font-size: 20px;
+    font-size: 22.5px;
     margin: 1rem 0rem 0.2rem 0rem;
 }
 
