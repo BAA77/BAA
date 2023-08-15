@@ -644,20 +644,21 @@ footer p#copyright {
 
     /* -------Form------- */
     section.aircraftSearch {
-        margin-top: 3.7rem;
+        margin-top: 3.3rem;
         row-gap: 0.4rem;
         padding: 1rem 0.3rem;
     }
 
     section.aircraftSearch h1 {
         line-height: 1.7rem;
-        font-size: 23.5px;
-        margin-bottom: 0.7rem;
+        font-size: 24.5px;
+        margin-bottom: 0.5rem;
     }
 
     section.aircraftSearch p {
-        font-size: 15px;
-        margin-bottom: 0.7rem;
+        width: 95%;
+        font-size: 18.5px;
+        margin-bottom: 0.5rem;
     }
 
     section.aircraftSearch p a {
@@ -672,23 +673,24 @@ footer p#copyright {
     }
 
     section.aircraftSearch form div.formEntrance label {
-        width: 5.5rem;
-        height: 1.3rem;
-        font-size: 17px;
+        width: 30%;
+        height: 1.7rem;
+        font-size: 20px;
         border-top-left-radius: 7.2px;
         border-bottom-left-radius: 7.2px;
     }
 
     section.aircraftSearch form div.formEntrance textarea {
-        width: 19rem;
+        width: 95vw;
         height: 8rem;
-        font-size: 15px;
+        font-size: 18px;
         border-bottom-left-radius: 7.2px;
         border-bottom-right-radius: 7.2px;
     }
 
     section.aircraftSearch form div.importNote {
-        font-size: 13.5px;
+        width: 95%;
+        font-size: 17px;
         margin: 0.5rem 0rem;
     }
 
@@ -698,9 +700,9 @@ footer p#copyright {
     }
 
     section.aircraftSearch form div.diContact input {
-        width: 12rem;
-        height: 1.3rem;
-        font-size: 14.5px;
+        width: 65%;
+        height: 1.7rem;
+        font-size: 18px;
         padding: 0.1rem 0.3rem;
         border-top-right-radius: 7.2px;
         border-bottom-right-radius: 7.2px;
@@ -708,9 +710,12 @@ footer p#copyright {
 
     section.aircraftSearch form div.formEntrance button {
         width: 7.2rem;
-        height: 1.5rem;
-        font-size: 14.5px;
+        height: 1.7rem;
+        font-size: 18px;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 1.7rem;
         box-shadow: 0px 0px 20px white;
     }
