@@ -441,8 +441,8 @@ footer p#copyright {
     }
 
     /* -------Actuated Vision, Mission and Truth------- */
-    section.object {
-        margin-top: 3.8rem;
+   section.object {
+        margin-top: 3.3rem;
     }
 
     section.object div.logo {
@@ -456,12 +456,12 @@ footer p#copyright {
     }
 
     section.object div.objectPosterity h3 {
-        font-size: 17.5px;
+        font-size: 23.5px;
         margin-bottom: 0.2rem;
     }
 
     section.object div.objectPosterity p {
-        font-size: 15px;
+        font-size: 19px;
     }
 
     /* -------Footer------- */
