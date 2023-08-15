@@ -730,6 +730,7 @@ footer p#copyright {
     /* -------Footer------- */
     footer {
         padding: 0.5rem 0.5rem;
+        margin-top: 1rem;
     }
 
     footer div.footerLogo img {
@@ -742,7 +743,7 @@ footer p#copyright {
     }
 
     footer div.footerPortContainer h4 {
-        font-size: 16.5px;
+        font-size: 17.5px;
     }
 
     footer div.footerPortContainer ul li a {
@@ -756,11 +757,11 @@ footer p#copyright {
     }
 
     footer div.footerPortContainer ul li a p {
-        font-size: 13.5px;
+        font-size: 14.5px;
     }
 
     footer p#copyright {
-        font-size: 13.5px;
+        font-size: 14.5px;
         padding: 0.3rem;
         margin-top: 0.3rem;
     }
