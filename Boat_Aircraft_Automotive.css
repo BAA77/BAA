@@ -1234,7 +1234,7 @@ footer p#copyright {
     }
     
     #leftGate {
-        left: 15%;
+        left: 14%;
     }
     
     #rightGate {
@@ -1242,7 +1242,7 @@ footer p#copyright {
     }
 
     section div.news div.swiper div.swiperWrapper {
-        width: 70%;
+        width: 72%;
         padding: 0.9rem 0rem 1.2rem 0.6rem;
     }
 
@@ -1266,6 +1266,7 @@ footer p#copyright {
     }
 
     section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p {
+        line-height: 1rem;
         font-size: 16.5px;
     }
 
