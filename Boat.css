@@ -33,7 +33,7 @@ div#backsplash {
     z-index: -3;
 }
 
-div.backsplash {
+/* div.backsplash {
     position: absolute;
     width: 100%;
     height: 135vh;
@@ -49,7 +49,7 @@ div.backsplash {
     background-position: center;
     background-size: cover;
     z-index: -3;
-}
+} */
 
 /* -------Header( Navigation Menu )------- */
 header {
