@@ -784,16 +784,22 @@ footer p#copyright {
 
     /* -------Header( Navigation Menu )------- */
     header {
-        height: 2.1rem;
+        height: 2.4rem;
     }
 
     header div.logoAndMenuBar a img#logo {
-        width: 1.8rem;
-        height: 1.6rem;
+        width: 2.1rem;
+        height: 1.9rem;
     }
 
     header nav ul a li {
-        font-size: 13px;
+        line-height: 1.4rem;
+        font-size: 15px;
+    }
+
+    header div.logoAndMenuBar img.menuBar {
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     /* -------Form------- */
@@ -804,12 +810,14 @@ footer p#copyright {
     }
 
     section.automotiveSearch h1 {
-        font-size: 20.1px;
-        margin-bottom: 0rem;
+        width: 98%;
+        font-size: 22px;
+        margin-bottom: 0.4rem;
     }
 
     section.automotiveSearch p {
-        font-size: 14.3px;
+        width: 97%;
+        font-size: 17px;
         margin-bottom: 0.1rem;
     }
 
@@ -821,24 +829,22 @@ footer p#copyright {
     }
 
     section.automotiveSearch form div.formEntrance label {
-        width: 4.8rem;
-        height: 1rem;
-        font-size: 15.8px;
+        width: 32%;
+        height: 1.5rem;
+        font-size: 19px;
         border-top-left-radius: 3.4px;
         border-bottom-left-radius: 3.4px;
     }
 
     section.automotiveSearch form div.formEntrance textarea {
-        width: 14.2rem;
         height: 7rem;
-        font-size: 14.3px;
+        font-size: 17px;
         border-bottom-left-radius: 3.4px;
         border-bottom-right-radius: 3.4px;
     }
 
     section.automotiveSearch form div.importNote {
-        font-size: 13.8px;
-        margin: 0.5rem 0rem;
+        font-size: 16.5px;
     }
 
     section.automotiveSearch form div.diContact {
@@ -847,10 +853,9 @@ footer p#copyright {
     }
 
     section.automotiveSearch form div.diContact input {
-        width: 8.5rem;
-        height: 1.07rem;
-        font-size: 13.8px;
-        padding: 0.1rem 0.3rem;
+        width: 67%;
+        height: 1.59rem;
+        font-size: 17px;
         border-top-right-radius: 3.4px;
         border-bottom-right-radius: 3.4px;
     }
@@ -870,7 +875,7 @@ footer p#copyright {
     }
 
     section.automotiveSearch form div.formEntrance div.popUp p{
-        font-size: 17.8px;
+        font-size: 17px;
     }
 
 
@@ -889,12 +894,11 @@ footer p#copyright {
     }
 
     footer div.footerPortContainer h4 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     footer div.footerPortContainer ul li a {
-        width: 4.6rem;
-        margin-top: 0.7rem;
+        width: 5.2rem;
     }
 
     footer div.footerPortContainer ul li a img {
@@ -903,11 +907,10 @@ footer p#copyright {
     }
 
     footer div.footerPortContainer ul li a p {
-        font-size: 11.5px;
+        font-size: 14px;
     }
 
     footer p#copyright {
-        font-size: 11.5px;
-        margin-top: 0.3rem;
+        font-size: 14px;
     }
 }
