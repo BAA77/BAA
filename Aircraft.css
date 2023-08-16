@@ -30,7 +30,7 @@ div#backsplash {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: -3;
+    z-index: -2;
 }
 
 div.backsplash {
@@ -39,7 +39,6 @@ div.backsplash {
     height: 135vh;
     top: 0;
     background: black;
-    opacity: 70%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -681,7 +680,7 @@ footer p#copyright {
     }
 
     section.aircraftSearch form div.formEntrance textarea {
-        width: 95vw;
+        width: 91vw;
         height: 8rem;
         font-size: 18px;
         border-bottom-left-radius: 7.2px;
