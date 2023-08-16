@@ -11,7 +11,6 @@ div#backsplash {
     top: 0;
     background-color: #339D87;
     background-image: url(JPEG/sky-5534319.jpg);
-    opacity: 75%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,6 +23,7 @@ div.backsplash {
     height: 135vh;
     top: 0;
     background: #122B44;
+    opacity: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
