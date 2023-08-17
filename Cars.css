@@ -26,11 +26,11 @@ div#backsplash {
     top: 0;
     background-color: #339D87;
     background-image: url(JPEG/car-3504910.jpg);
-    opacity: 50%;
+    opacity: 75%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: -2;
+    z-index: -3;
 }
 
 div.backsplash {
@@ -39,12 +39,12 @@ div.backsplash {
     height: 135vh;
     top: 0;
     background: #070f18;
+    opacity: 65%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: -3;
+    z-index: -2;
 }
-
 /* -------Header( Navigation Menu )------- */
 header {
     background-color: #26BD9C;
