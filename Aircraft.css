@@ -25,25 +25,11 @@ div#backsplash {
     height: 135vh;
     top: 0;
     background-color: #339D87;
-    background-image: url(JPEG/pexels-ivan-chumakov-8063450.jpg);
-    opacity: 75%;
+    background-image: url(JPEG/pexels-ivan-chumakov-8063450a.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: -3;
-}
-
-div.backsplash {
-    position: absolute;
-    width: 100%;
-    height: 135vh;
-    top: 0;
-    background: black;
-    opacity: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -2;
 }
 
 /* -------Header( Navigation Menu )------- */
