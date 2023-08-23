@@ -30,7 +30,7 @@
             <ul id="ul">
                 <a href="index.html">
                     <li>
-                         HOME
+                        HOME
                     </li>
                 </a>
                 <a href="Boat.html">
@@ -62,46 +62,50 @@
     </header>
 
     <!-------Form------->
-    <section class="aircraftSearch">
-        <h1>
-            YOU ARE A MOMENT AWAY FROM ACQUIRING YOUR AIRCRAFT
-        </h1>
-        <p id="rediSteps">
-            <a href="index.html#hTUTP">Click Me to Have an Understanding of how to use this Platform
-                Effectively and Knowledge of its
-                Time frame and Phases of Execution.
-            </a>
-        </p>
-        <form onsubmit="sendEmail(); return false;">
-            <div class="formEntrance">
-                <div class="specAndRequirement">
-                    <label for="SpecAndRequirement" class="sARLabel">Specification and Requirement:</label>
-                    <textarea name="Spec&Requirement" id="SpecAndRequirement" cols="55" rows="9" required></textarea>
-                </div>
-                <div class="importNote">
-                    Please, Also Attach to Your Specification and Requirement Note; &nbsp; Location, Price Range and How Far You Can Travel to Acquire Your Aircraft.
-                </div>
-                <div class="contactInformation">
-                    <div class="diContact">
-                        <label for="email">Email:</label><br>
-                        <input type="email" name="E-mail" id="email" required>
+    <section id="aircraftSearch">
+        <div class="aircraftSearch">
+            <h1>
+                YOU ARE A MOMENT AWAY FROM ACQUIRING YOUR AIRCRAFT
+            </h1>
+            <p id="rediSteps">
+                <a href="index.html#hTUTP">Click Me to Have an Understanding of how to use this Platform
+                    Effectively and Knowledge of its
+                    Time frame and Phases of Execution.
+                </a>
+            </p>
+            <form onsubmit="sendEmail(); return false;">
+                <div class="formEntrance">
+                    <div class="specAndRequirement">
+                        <label for="SpecAndRequirement" class="sARLabel">Specification and Requirement:</label>
+                        <textarea name="Spec&Requirement" id="SpecAndRequirement" cols="55" rows="9"
+                            required></textarea>
                     </div>
-                    <div class="diContact">
-                        <label for="whatsapp">Whatsapp:</label><br>
-                        <input type="tel" name="Whatsapp" id="whatsapp" value="+">
+                    <div class="importNote">
+                        Please, Also Attach to Your Specification and Requirement Note; &nbsp; Price Range and How Far
+                        You Can Travel to Acquire Your Aircraft.
+                    </div>
+                    <div class="contactInformation">
+                        <div class="diContact">
+                            <label for="email">Email:</label><br>
+                            <input type="email" name="E-mail" id="email" required>
+                        </div>
+                        <div class="diContact">
+                            <label for="whatsapp">Whatsapp:</label><br>
+                            <input type="tel" name="Whatsapp" id="whatsapp" value="+" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="button">
+                        RELAY
+                    </button>
+                    <div id="popUp" class="popUp">
+                        <img src="graph/check.png">
+                        <h3>The Relay Was Successful</h3>
+                        <p>Please Expect a Response from the Team within 7 Days</p>
+                        <a href="index.html">OK</a>
                     </div>
                 </div>
-                <button type="submit" class="button">
-                    RELAY
-                </button>
-                <div id="popUp" class="popUp">
-                    <img src="graph/check.png">
-                    <h3>The Relay Was Successful</h3>
-                    <p>Please Expect a Response from the Team within 7 Days</p>
-                    <a href="index.html">OK</a>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
 
     <!-------Footer------->
@@ -150,31 +154,31 @@
                     <h4>Social Media</h4>
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <img src="JPEG/KingsChat Icon.jpeg">
                                 <p>Kingschat</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://web.facebook.com/profile.php?id=61550278444280" target="_blank">
                                 <img src="graph/facebook (1).png">
                                 <p>Facebook</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/boat.aircraftautomotive/" target="_blank">
                                 <img src="graph/instagram.png">
                                 <p>Instagram</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://twitter.com/Boat_Air_Auto" target="_blank">
                                 <img src="graph/twitter.png">
                                 <p>Twitter</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <img src="graph/linkedin.png">
                                 <p>LinkedIn</p>
                             </a>
@@ -220,6 +224,20 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+        // ------- Back-Splash-------
+        const background = document.querySelector('#backsplash')
+        const formContent = document.getElementById('aircraftSearch');
+        const backsplashHeight = formContent.scrollHeight;
+        const deviceHeight = screen.availHeight;
+
+        if (backsplashHeight <= deviceHeight) {
+            background.style.height = `100%`;
+            formContent.style.height = `100vh`;
+        }
+        else {
+            background.style.height = `${backsplashHeight}px`;
+        }
+
         // -------Navigation-Menu for 359px/685px Device Width-------
         let ul = document.getElementById('ul');
         let open = document.getElementById('open');
@@ -227,7 +245,7 @@
         let navigation = document.getElementById('navigation');
 
         function toggleBarOpen() {
-            navigation.style.width = '50%';
+            navigation.style.width = '75%';
             close.style.display = 'block';
             open.style.display = 'none';
             ul.style.display = 'block'
@@ -242,10 +260,10 @@
 
         //-------Redirect Link to Home/Steps-------
         const rediSteps = document.querySelector('#rediSteps');
-        rediSteps.addEventListener('mousedown', (()=> {
+        rediSteps.addEventListener('mousedown', (() => {
             rediSteps.style.background = 'rgb(14, 14, 14)'
         }));
-        rediSteps.addEventListener('mouseup', (()=> {
+        rediSteps.addEventListener('mouseup', (() => {
             rediSteps.style.background = 'rgb(17, 15, 17)'
         }));
 
@@ -261,14 +279,14 @@
                 Body: "SPECIFICATION AND REQUIREMENT: " + "<br>" + document.getElementById('SpecAndRequirement').value + "<br>"
                     + "<br> Email: " + " " + document.getElementById('email').value + "<br>"
                     + "<br> Whatsapp: " + " " + document.getElementById('whatsapp').value + "<br>"
-            }).then(() =>{
+            }).then(() => {
                 let popUp = document.getElementById('popUp');
                 popUp.style.top = '35%';
                 popUp.style.transform = 'scale(1)';
                 popUp.style.visibility = 'visible';
                 document.querySelector('#window').style.visibility = 'visible';
             });
-        
+
         }
 
     </script>
