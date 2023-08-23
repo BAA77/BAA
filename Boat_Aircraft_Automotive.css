@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #339D87;
+}
+
 /* ------- Window Background ------- */
 div#windowBg {
     display: none;
@@ -14,19 +18,6 @@ div#windowBg {
     top: 0vh;
     background-color: #0C8B78;
     z-index: 6;
-}
-
-
-div.backsplash {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    background-color: #00FECC;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -3;
 }
 
 div#backsplash {
@@ -105,6 +96,17 @@ header nav ul a li:after {
     display: block;
     height: 3px;
     width: 0%;
+    margin-top: 0.3rem;
+    background-color: #122B44;
+    box-shadow: 1px 1px 7px white;
+    transition: 0.3s;
+}
+
+header nav ul a li#act:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
     margin-top: 0.3rem;
     background-color: #122B44;
     box-shadow: 1px 1px 7px white;
@@ -232,16 +234,16 @@ div.scrollContentContainer {
     top: 100vh;
     left: 0rem;
     width: 100%;
-    background-color: #339D87;
 }
 
 /* -------The Bridge Section------- */
 section.theBridgeSection {
-    width: 100%;
+    width: 99%;
     text-align: center;
     color: whitesmoke;
     background: url(JPEG/background3.jpg);
     padding: 1rem 0.2rem;
+    margin: 1.5rem auto 0rem;
     font-family: 'Abhaya Libre', serif;
 }
 
@@ -439,7 +441,7 @@ section div.news div.swiper div.img  button img {
 
 .gate {
     width: 4.5rem;
-    height: 16rem;
+    height: 14.2rem;
     position: absolute;
     background-image: linear-gradient(90deg, #226764, transparent);
     z-index: 5;
@@ -500,8 +502,8 @@ section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkImg {
 }
 
 section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkImg img {
-    width: 8.2rem;
-    height: 8.2rem;
+    width: 7.5rem;
+    height: 7.5rem;
     border: 5px solid #26BD9C;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -526,11 +528,11 @@ section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p 
 
 /* -------Closing Note------- */
 section.closingNote {
-    width: 100%;
+    width: 99%;
     text-align: center;
     background: url(JPEG/background3.jpg);
     padding: 1rem 0.2rem;
-    margin-top: 6rem;
+    margin: 6rem auto 0rem;
     font-family: 'Abhaya Libre', serif;
     color: white;
 }
@@ -621,7 +623,7 @@ footer {
     flex-direction: column;
     color: #122B44;
     padding: 1rem 1rem;
-    margin-top: 1.5rem;
+    margin-top: 3.3rem;
 }
 
 footer div.footerLogo {
@@ -629,8 +631,8 @@ footer div.footerLogo {
 }
 
 footer div.footerLogo img {
-    width: 84px;
-    height: 80.7px;
+    width: 90px;
+    height: 86.5px;
 }
 
 footer div.footerPortContainer {
@@ -640,7 +642,7 @@ footer div.footerPortContainer {
 }
 
 footer div.footerPortContainer h4 {
-    font-size: 21px;
+    font-size: 23px;
     font-family: 'Abhaya Libre', serif;
 }
 
@@ -649,11 +651,9 @@ footer div.footerPortContainer ul {
 }
 
 footer div.footerPortContainer ul li a {
-    width: 8rem;
     text-decoration: none;
     color: white;
     display: inline-flex;
-    align-items: center;
     margin-top: 0.7rem;
 }
 
@@ -674,13 +674,14 @@ footer div.footerPortContainer ul li a img {
 }
 
 footer div.footerPortContainer ul li a p {
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
-    font-size: 18px;
+    padding-right: 0.5rem;
 }
 
 footer p#copyright {
     text-align: center;
-    font-size: 17px;
+    font-size: 19px;
     font-family: 'Abhaya Libre', serif;
     padding: 0.3rem;
     margin-top: 0.3rem;
@@ -741,7 +742,7 @@ div.platformWelcomeMessage h4 {
 
 div.platformWelcomeMessage div#welcomeImage img {
     width: 382px;
-    height: 233.2px;
+    height: 213.2px;
 }
 
 div.platformWelcomeMessage p {
@@ -937,6 +938,9 @@ section.KEP .KEPframe .KEPcontent video {
 }
 
 /* -------FOOTER------- */
+footer {
+    margin-top: 2.3rem;
+}
 
 footer div.footerLogo img {
     width: 80px;
@@ -1062,6 +1066,7 @@ footer p#copyright {
         display: none;
     }
 
+    /* -------Platform Welcome Message------- */
     div.platformWelcomeMessage {
         color: white;
         display: flex;
@@ -1327,7 +1332,7 @@ section.KEP .KEPframe .KEPcontent video {
     /* -------Footer------- */
     footer {
         padding: 0.5rem 0.5rem;
-        margin-top: 1rem;
+        margin-top: 2.9rem;
     }
 
     footer div.footerLogo img {
@@ -1344,7 +1349,6 @@ section.KEP .KEPframe .KEPcontent video {
     }
 
     footer div.footerPortContainer ul li a {
-        width: 5rem;
         margin-top: 0.7rem;
     }
 
@@ -1355,6 +1359,7 @@ section.KEP .KEPframe .KEPcontent video {
 
     footer div.footerPortContainer ul li a p {
         font-size: 14.5px;
+        padding-right: 0.3rem;
     }
 
     footer p#copyright {
@@ -1613,10 +1618,6 @@ section.KEP .KEPframe .KEPcontent video {
 
     footer div.footerPortContainer h4 {
         font-size: 16px;
-    }
-
-    footer div.footerPortContainer ul li a {
-        width: 5.2rem;
     }
 
     footer div.footerPortContainer ul li a img {
