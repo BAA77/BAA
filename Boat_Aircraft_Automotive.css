@@ -565,7 +565,7 @@ section.KEP {
     color: #122B44;
     padding: 0.3rem 0.3rem;
     margin:  2.3rem 3.5rem 1.3rem 3.5rem;
-    display: block;
+    display: none;
 }
 
 section.KEP .KEPframe {
