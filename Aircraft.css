@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #339D87;
+}
+
 div#window {
     position: fixed;
     width: 100%;
@@ -22,7 +26,6 @@ div#window {
 div#backsplash {
     position: absolute;
     width: 100%;
-    height: 135vh;
     top: 0;
     background-color: #339D87;
     background-image: url(JPEG/pexels-ivan-chumakov-8063450a.jpg);
@@ -63,8 +66,7 @@ header div.logoAndMenuBar a img#logo {
     margin: 0rem auto;
 }
 
-header nav {
-}
+header nav {}
 
 header nav ul {
     list-style: none;
@@ -101,6 +103,17 @@ header nav ul a li:after {
     transition: 0.3s;
 }
 
+header nav ul a li#act:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin-top: 0.3rem;
+    background-color: #122B44;
+    box-shadow: 1px 1px 7px white;
+    transition: 0.3s;
+}
+
 header nav ul a li:hover:after {
     width: 100%;
 }
@@ -124,19 +137,23 @@ header div.logoAndMenuBar img.menuBar {
 }
 
 /* -------Form------- */
-section.aircraftSearch {
+section#aircraftSearch {
     font-family: 'Abhaya Libre', serif;
     margin-top: 4.5rem;
+    padding: 1.5rem 2.3rem;
+    color: white;
+}
+
+section#aircraftSearch .aircraftSearch {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 2.3rem;
-    color: white;
+    padding-bottom: 8rem;
 }
 
-section.aircraftSearch h1 {
+section#aircraftSearch h1 {
     width: 90%;
     font-family: 'Eczar', serif;
     font-size: 29px;
@@ -146,7 +163,9 @@ section.aircraftSearch h1 {
     margin-bottom: 0.8rem;
 }
 
-section.aircraftSearch p {
+
+
+section#aircraftSearch p {
     font-size: 20.5px;
     text-align: center;
     cursor: pointer;
@@ -154,12 +173,12 @@ section.aircraftSearch p {
     background-color: transparent;
 }
 
-section.aircraftSearch p:hover {
+section#aircraftSearch p:hover {
     background: rgb(14, 14, 14);
     box-shadow: 1px 1px 4px white;
 }
 
-section.aircraftSearch p a {
+section#aircraftSearch p a {
     display: inline-block;
     text-decoration: none;
     color: whitesmoke;
@@ -168,22 +187,21 @@ section.aircraftSearch p a {
     transition: 0.7s;
 }
 
-section.aircraftSearch form {
-}
+section#aircraftSearch form {}
 
-section.aircraftSearch form div.formEntrance {
+section#aircraftSearch form div.formEntrance {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-section.aircraftSearch form div.formEntrance div.specAndRequirement {
+section#aircraftSearch form div.formEntrance div.specAndRequirement {
     display: flex;
     flex-direction: column;
 }
 
-section.aircraftSearch form div.formEntrance label.sARLabel {
+section#aircraftSearch form div.formEntrance label.sARLabel {
     width: 100%;
     background-color: #26BD9C;
     border-top-left-radius: 9px;
@@ -192,7 +210,7 @@ section.aircraftSearch form div.formEntrance label.sARLabel {
     margin-bottom: 0.13rem;
 }
 
-section.aircraftSearch form div.formEntrance label {
+section#aircraftSearch form div.formEntrance label {
     width: 9rem;
     font-size: 24px;
     cursor: pointer;
@@ -202,11 +220,11 @@ section.aircraftSearch form div.formEntrance label {
     border-bottom-left-radius: 9px;
 }
 
-section.aircraftSearch form div.formEntrance label:active {
-     background: #32f3c9;
+section#aircraftSearch form div.formEntrance label:active {
+    background: #32f3c9;
 }
 
-section.aircraftSearch form div.formEntrance textarea {
+section#aircraftSearch form div.formEntrance textarea {
     width: 40vw;
     height: 12rem;
     font-family: 'Abhaya Libre', serif;
@@ -218,23 +236,26 @@ section.aircraftSearch form div.formEntrance textarea {
     border-bottom-right-radius: 9px;
 }
 
-section.aircraftSearch form div.importNote {
+section#aircraftSearch form div.importNote {
     width: 75%;
     font-size: 20px;
     text-align: center;
     margin: 0.8rem 0rem;
 }
 
-section.aircraftSearch form div.contactInformation {
+section#aircraftSearch form div.contactInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-section.aircraftSearch form div.diContact {
+section#aircraftSearch form div.diContact {
     display: flex;
     column-gap: 1rem;
     margin: 0.2rem 0rem;
 }
 
-section.aircraftSearch form div.diContact input {
+section#aircraftSearch form div.diContact input {
     width: 21rem;
     height: 1.9rem;
     font-size: 20px;
@@ -245,7 +266,7 @@ section.aircraftSearch form div.diContact input {
     border-bottom-right-radius: 9px;
 }
 
-section.aircraftSearch form div.formEntrance button {
+section#aircraftSearch form div.formEntrance button {
     width: 8.5rem;
     height: 1.8rem;
     font-size: 20px;
@@ -258,12 +279,12 @@ section.aircraftSearch form div.formEntrance button {
     transition: 0.5s;
 }
 
-section.aircraftSearch form div.formEntrance button:hover {
+section#aircraftSearch form div.formEntrance button:hover {
     color: rgb(14, 14, 14);
     background-color: white;
 }
 
-section.aircraftSearch form div.formEntrance div.popUp{
+section#aircraftSearch form div.formEntrance div.popUp {
     background: rgb(222, 218, 218);
     position: fixed;
     top: 0;
@@ -280,19 +301,19 @@ section.aircraftSearch form div.formEntrance div.popUp{
     transition: 0.4s;
 }
 
-section.aircraftSearch form div.formEntrance div.popUp img{
+section#aircraftSearch form div.formEntrance div.popUp img {
     width: 70px;
     height: 70px;
 }
 
-section.aircraftSearch form div.formEntrance div.popUp h3{
+section#aircraftSearch form div.formEntrance div.popUp h3 {
     color: black;
     font-size: 24px;
     text-align: center;
     margin-bottom: 13px;
 }
 
-section.aircraftSearch form div.formEntrance div.popUp p{
+section#aircraftSearch form div.formEntrance div.popUp p {
     min-height: 4rem;
     width: 95%;
     display: flex;
@@ -305,7 +326,7 @@ section.aircraftSearch form div.formEntrance div.popUp p{
     border-radius: 13%;
 }
 
-section.aircraftSearch form div.formEntrance div.popUp a{
+section#aircraftSearch form div.formEntrance div.popUp a {
     width: 65px;
     text-decoration: none;
     color: white;
@@ -317,28 +338,20 @@ section.aircraftSearch form div.formEntrance div.popUp a{
     margin: 9px 0px 4px 0px;
 }
 
-section.aircraftSearch form div.formEntrance div.popUp a:hover{
+section#aircraftSearch form div.formEntrance div.popUp a:hover {
     border: 2px solid #389581;
     background: #26BD9C;
     box-shadow: 1px 1px 3px #389581
 }
 
 /* -------FOOTER------- */
-div.scrollContentContainer {
-    position: absolute;
-    top: 135vh;
-    left: 0rem;
-    width: 100%;
-    background-color: #339D87;
-}
-
 footer {
     background-color: #26BD9C;
     display: flex;
     flex-direction: column;
     color: #122B44;
     padding: 1rem 1rem;
-    margin-top: 1.5rem;
+    margin-top: -3.3rem;
 }
 
 footer div.footerLogo {
@@ -346,8 +359,8 @@ footer div.footerLogo {
 }
 
 footer div.footerLogo img {
-    width: 84px;
-    height: 80.7px;
+    width: 90px;
+    height: 86.5px;
 }
 
 footer div.footerPortContainer {
@@ -357,7 +370,7 @@ footer div.footerPortContainer {
 }
 
 footer div.footerPortContainer h4 {
-    font-size: 21px;
+    font-size: 23px;
     font-family: 'Abhaya Libre', serif;
 }
 
@@ -366,11 +379,9 @@ footer div.footerPortContainer ul {
 }
 
 footer div.footerPortContainer ul li a {
-    width: 8rem;
     text-decoration: none;
     color: white;
     display: inline-flex;
-    align-items: center;
     margin-top: 0.7rem;
 }
 
@@ -391,13 +402,14 @@ footer div.footerPortContainer ul li a img {
 }
 
 footer div.footerPortContainer ul li a p {
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
-    font-size: 18px;
+    padding-right: 0.5rem;
 }
 
 footer p#copyright {
     text-align: center;
-    font-size: 17px;
+    font-size: 19px;
     font-family: 'Abhaya Libre', serif;
     padding: 0.3rem;
     margin-top: 0.3rem;
@@ -413,127 +425,130 @@ footer p#copyright {
 @media(max-width: 1450px) {
 
     /* -------Header( Navigation Menu )------- */
-header {
-    box-shadow: 0px 0.12px 2px white;
+    header {
+        box-shadow: 0px 0.12px 2px white;
+    }
+
+    header div.logoAndMenuBar {
+        width: 2.9rem;
+        height: 2.6rem;
+        padding: 0.2rem 0.4rem;
+        margin: 0.25rem 0rem 0rem 0rem;
+    }
+
+    header div.logoAndMenuBar a img#logo {
+        width: 2.5rem;
+        height: 2.3rem;
+    }
+
+    header nav ul a li {
+        padding: 0rem 0.2rem -0.2rem 0.2rem;
+        margin: 0.7rem 1.4rem 0.2rem 1.4rem;
+        font-size: 14px;
+        border-radius: 13px;
+    }
+
+    header nav ul a li:after {
+        margin-top: 0.1rem;
+    }
+
+    header nav ul a li:hover:after {
+        width: 100%;
+    }
+
+    header nav ul a li.active:after {
+        margin-top: 0.1rem;
+    }
+
+    /* -------Form------- */
+    section#aircraftSearch h1 {
+        width: 92%;
+        font-size: 28px;
+    }
+
+    section#aircraftSearch p {
+        width: 92%;
+        font-size: 19px;
+    }
+
+    section#aircraftSearch form div.formEntrance label {
+        width: 7rem;
+        font-size: 22px;
+    }
+
+    section#aircraftSearch form div.formEntrance textarea {
+        width: 32rem;
+        height: 10rem;
+        font-size: 19px;
+    }
+
+    section#aircraftSearch form div.importNote {
+        font-size: 18px;
+    }
+
+    section#aircraftSearch form div.diContact input {
+        width: 17rem;
+        height: 1.7rem;
+        font-size: 16px;
+    }
+
+    section#aircraftSearch form div.formEntrance button {
+        width: 7.5rem;
+        height: 1.6rem;
+        font-size: 17px;
+    }
+
+    section#aircraftSearch form div.formEntrance div.popUp img {
+        width: 60px;
+        height: 60px;
+    }
+
+    section#aircraftSearch form div.formEntrance div.popUp h3 {
+        font-size: 23px;
+    }
+
+    section#aircraftSearch form div.formEntrance div.popUp p {
+        font-size: 19px;
+    }
+
+    section#aircraftSearch form div.formEntrance div.popUp a {
+        font-size: 16px;
+    }
+
+    /* -------FOOTER------- */
+    footer {
+        margin-top: -3.8rem;
+    }
+
+    footer div.footerLogo img {
+        width: 80px;
+        height: 76.9px;
+    }
+
+    footer div.footerPortContainer h4 {
+        font-size: 18px;
+    }
+
+    footer div.footerPortContainer ul li a:hover {
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+
+    footer div.footerPortContainer ul li a img {
+        width: 15px;
+        height: 15px;
+    }
+
+    footer div.footerPortContainer ul li a p {
+        font-size: 15px;
+    }
+
+    footer p#copyright {
+        font-size: 15px;
+    }
+
 }
 
-header div.logoAndMenuBar {
-    width: 2.9rem;
-    height: 2.6rem;
-    padding: 0.2rem 0.4rem;
-    margin: 0.25rem 0rem 0rem 0rem;
-}
-
-header div.logoAndMenuBar a img#logo {
-    width: 2.5rem;
-    height: 2.3rem;
-}
-
-header nav ul a li {
-    padding: 0rem 0.2rem -0.2rem 0.2rem;
-    margin: 0.7rem 1.4rem 0.2rem 1.4rem;
-    font-size: 14px;
-    border-radius: 13px;
-}
-
-header nav ul a li:after {
-    margin-top: 0.1rem;
-}
-
-header nav ul a li:hover:after {
-    width: 100%;
-}
-
-header nav ul a li.active:after {
-    margin-top: 0.1rem;
-}
-    
-/* -------Form------- */
-
-section.aircraftSearch h1 {
-    width: 92%;
-    font-size: 28px;
-}
-
-section.aircraftSearch p {
-    width: 92%;
-    font-size: 19px;
-}
-
-section.aircraftSearch form div.formEntrance label {
-    width: 7rem;
-    font-size: 22px;
-}
-
-section.aircraftSearch form div.formEntrance textarea {
-    width: 32rem;
-    height: 10rem;
-    font-size: 19px;
-}
-
-section.aircraftSearch form div.importNote {
-    font-size: 18px;
-}
-
-section.aircraftSearch form div.diContact input {
-    width: 17rem;
-    height: 1.7rem;
-    font-size: 16px;
-}
-
-section.aircraftSearch form div.formEntrance button {
-    width: 7.5rem;
-    height: 1.6rem;
-    font-size: 17px;
-}
-
-section.aircraftSearch form div.formEntrance div.popUp img{
-    width: 60px;
-    height: 60px;
-}
-
-section.aircraftSearch form div.formEntrance div.popUp h3{
-    font-size: 23px;
-}
-
-section.aircraftSearch form div.formEntrance div.popUp p{
-    font-size: 19px;
-}
-
-section.aircraftSearch form div.formEntrance div.popUp a{
-    font-size: 16px;
-}
-
-/* -------FOOTER------- */
-
-footer div.footerLogo img {
-    width: 80px;
-    height: 76.9px;
-}
-
-footer div.footerPortContainer h4 {
-    font-size: 18px;
-}
-
-footer div.footerPortContainer ul li a:hover {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
-
-footer div.footerPortContainer ul li a img {
-    width: 15px;
-    height: 15px;
-}
-
-footer div.footerPortContainer ul li a p {
-    font-size: 15px;
-}
-
-footer p#copyright {
-    font-size: 15px;
-}
-
-}
 
 
 
@@ -629,64 +644,64 @@ footer p#copyright {
     }
 
     /* -------Form------- */
-    section.aircraftSearch {
+    section#aircraftSearch {
         margin-top: 3.3rem;
         row-gap: 0.4rem;
         padding: 1rem 0.3rem;
     }
 
-    section.aircraftSearch h1 {
+    section#aircraftSearch h1 {
         line-height: 1.7rem;
         font-size: 24.5px;
         margin-bottom: 0.5rem;
     }
 
-    section.aircraftSearch p {
+    section#aircraftSearch p {
         width: 95%;
         font-size: 18.5px;
         margin-bottom: 0.5rem;
     }
 
-    section.aircraftSearch p a {
+    section#aircraftSearch p a {
         padding: 0.13;
     }
 
-    section.aircraftSearch form div.formEntrance label.sARLabel {
+    section#aircraftSearch form div.formEntrance label.sARLabel {
         border-top-left-radius: 7.2px;
         border-top-right-radius: 7.2px;
         border-bottom-left-radius: 0px;
         margin-bottom: 0.13rem;
     }
 
-    section.aircraftSearch form div.formEntrance label {
-        width: 30%;
+    section#aircraftSearch form div.formEntrance label {
+        width: 29vw;
         height: 1.7rem;
         font-size: 20px;
         border-top-left-radius: 7.2px;
         border-bottom-left-radius: 7.2px;
     }
 
-    section.aircraftSearch form div.formEntrance textarea {
-        width: 91vw;
+    section#aircraftSearch form div.formEntrance textarea {
+        width: 95vw;
         height: 8rem;
         font-size: 18px;
         border-bottom-left-radius: 7.2px;
         border-bottom-right-radius: 7.2px;
     }
 
-    section.aircraftSearch form div.importNote {
+    section#aircraftSearch form div.importNote {
         width: 95%;
         font-size: 17px;
         margin: 0.5rem 0rem;
     }
 
-    section.aircraftSearch form div.diContact {
+    section#aircraftSearch form div.diContact {
         margin: 0.2rem 0rem;
         column-gap: 0.3rem;
     }
 
-    section.aircraftSearch form div.diContact input {
-        width: 65%;
+    section#aircraftSearch form div.diContact input {
+        width: 62vw;
         height: 1.7rem;
         font-size: 18px;
         padding: 0.1rem 0.3rem;
@@ -694,7 +709,7 @@ footer p#copyright {
         border-bottom-right-radius: 7.2px;
     }
 
-    section.aircraftSearch form div.formEntrance button {
+    section#aircraftSearch form div.formEntrance button {
         width: 7.2rem;
         height: 1.7rem;
         font-size: 18px;
@@ -706,20 +721,21 @@ footer p#copyright {
         box-shadow: 0px 0px 20px white;
     }
 
-    section.aircraftSearch form div.formEntrance div.popUp{
+    section#aircraftSearch form div.formEntrance div.popUp {
         width: 85vw;
         border-radius: 13px;
     }
 
-    section.aircraftSearch form div.formEntrance div.popUp img{
+    section#aircraftSearch form div.formEntrance div.popUp img {
         width: 45px;
         height: 45px;
     }
 
+
     /* -------Footer------- */
     footer {
         padding: 0.5rem 0.5rem;
-        margin-top: 1rem;
+        margin-top: -2.9rem;
     }
 
     footer div.footerLogo img {
@@ -736,7 +752,6 @@ footer p#copyright {
     }
 
     footer div.footerPortContainer ul li a {
-        width: 5rem;
         margin-top: 0.7rem;
     }
 
@@ -747,6 +762,7 @@ footer p#copyright {
 
     footer div.footerPortContainer ul li a p {
         font-size: 14.5px;
+        padding-right: 0.3rem;
     }
 
     footer p#copyright {
@@ -787,80 +803,81 @@ footer p#copyright {
     }
 
     /* -------Form------- */
-    section.aircraftSearch {
+    section#aircraftSearch {
         margin-top: 3.1rem;
         row-gap: 0.4rem;
         padding: 0.3rem 0.2rem;
     }
 
-    section.aircraftSearch h1 {
+    section#aircraftSearch h1 {
         width: 98%;
         font-size: 22px;
         margin-bottom: 0.4rem;
     }
 
-    section.aircraftSearch p {
+    section#aircraftSearch p {
         width: 97%;
         font-size: 17px;
         margin-bottom: 0.1rem;
     }
 
-    section.aircraftSearch form div.formEntrance label.sARLabel {
+    section#aircraftSearch form div.formEntrance label.sARLabel {
         border-top-left-radius: 3.4px;
         border-top-right-radius: 3.4px;
         border-bottom-left-radius: 0px;
         margin-bottom: 0.1rem;
     }
 
-    section.aircraftSearch form div.formEntrance label {
-        width: 32%;
+    section#aircraftSearch form div.formEntrance label {
+        width: 31vw;
         height: 1.5rem;
         font-size: 19px;
         border-top-left-radius: 3.4px;
         border-bottom-left-radius: 3.4px;
     }
 
-    section.aircraftSearch form div.formEntrance textarea {
+    section#aircraftSearch form div.formEntrance textarea {
+        width: 97vw;
         height: 7rem;
         font-size: 17px;
         border-bottom-left-radius: 3.4px;
-        border-bottom-right-radius: 3.4px;
     }
 
-    section.aircraftSearch form div.importNote {
+    border-bottsection#aircraftSearch section#aircraftSearch form div.importNote {
         font-size: 16.5px;
     }
 
-    section.aircraftSearch form div.diContact {
+    section#aircraftSearch form div.diContact {
         margin: 0rem 0rem;
         column-gap: 0.15rem;
     }
 
-    section.aircraftSearch form div.diContact input {
-        width: 67%;
+    section#aircraftSearch form div.diContact input {
+        width: 62.7vw;
         height: 1.59rem;
         font-size: 17px;
         border-top-right-radius: 3.4px;
         border-bottom-right-radius: 3.4px;
     }
 
-    section.aircraftSearch form div.formEntrance button {
+    section#aircraftSearch form div.formEntrance button {
         margin-top: 1.3rem;
     }
 
-    section.aircraftSearch form div.formEntrance div.popUp{
+    section#aircraftSearch form div.formEntrance div.popUp {
         width: 80vw;
         border-radius: 12px;
     }
 
-    section.aircraftSearch form div.formEntrance div.popUp h3{
+    section#aircraftSearch form div.formEntrance div.popUp h3 {
         font-size: 20px;
-        margin-bottom: 13px;
+        margin-bottom: 13.8px;
     }
 
-    section.aircraftSearch form div.formEntrance div.popUp p{
+    section#aircraftSearch form div.formEntrance div.popUp p {
         font-size: 17px;
     }
+
 
     /* -------footer------- */
     footer {
@@ -878,10 +895,6 @@ footer p#copyright {
 
     footer div.footerPortContainer h4 {
         font-size: 16px;
-    }
-
-    footer div.footerPortContainer ul li a {
-        width: 5.2rem;
     }
 
     footer div.footerPortContainer ul li a img {
