@@ -61,7 +61,7 @@
     </header>
 
     <!-------Actuated Vision, Mission and Truth------->
-    <section class="object">
+    <section id="object">
         <div class="logo">
             <img src="graph/earth-globe-with-continents-maps.png" id="earth">
         </div>
@@ -92,7 +92,6 @@
     </section>
 
     <!-------Footer------->
-    <div class="scrollContentContainer">
         <footer>
             <div class="footerLogo">
                 <img src="graph/Logo.png">
@@ -137,31 +136,31 @@
                     <h4>Social Media</h4>
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <img src="JPEG/KingsChat Icon.jpeg">
                                 <p>Kingschat</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://web.facebook.com/profile.php?id=61550278444280" target="_blank">
                                 <img src="graph/facebook (1).png">
                                 <p>Facebook</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/boat.aircraftautomotive/" target="_blank">
                                 <img src="graph/instagram.png">
                                 <p>Instagram</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://twitter.com/Boat_Air_Auto" target="_blank">
                                 <img src="graph/twitter.png">
                                 <p>Twitter</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <img src="graph/linkedin.png">
                                 <p>LinkedIn</p>
                             </a>
@@ -207,6 +206,20 @@
 
 
     <script>
+        // ------- Back-Splash-------
+        const background = document.querySelector('#backsplash')
+        const objectContent = document.getElementById('object');
+        const backsplashHeight = objectContent.scrollHeight;
+        const deviceHeight = screen.availHeight;
+        
+        if ( backsplashHeight <= deviceHeight){
+            background.style.height = `100%`;
+            objectContent.style.height = `100vh`;
+        }
+        else {
+            background.style.height = `${backsplashHeight}px`;
+        }
+
         //-------EARTH ROTATION-------
         const earth = document.querySelector('#earth');
         let rotary = 0;
@@ -222,7 +235,7 @@
         let navigation = document.getElementById('navigation');
 
         function toggleBarOpen() {
-            navigation.style.width = '50%';
+            navigation.style.width = '75%';
             close.style.display = 'block';
             open.style.display = 'none';
             ul.style.display = 'block'
