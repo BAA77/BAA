@@ -225,15 +225,16 @@
         // ------- Back-Splash-------
         const background = document.querySelector('#backsplash')
         const formContent = document.getElementById('automotiveSearch');
-        const backsplashHeight = formContent.scrollHeight;
-        const deviceHeight = screen.availHeight;
+        let backsplashHeight = formContent.scrollHeight;
+        let deviceHeight = screen.availHeight;
 
         if (backsplashHeight <= deviceHeight) {
-            background.style.height = `100%`;
+            background.style.height = `100vh`;
             formContent.style.height = `100vh`;
         }
         else {
             background.style.height = `${backsplashHeight}px`;
+            formContent.style.height = `${backsplashHeight}px`;
         }
 
         // -------Navigation-Menu for 359px Device Width-------
