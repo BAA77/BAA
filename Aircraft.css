@@ -346,6 +346,7 @@ section#aircraftSearch form div.formEntrance div.popUp a:hover {
 
 /* -------FOOTER------- */
 footer {
+    position: relative;
     background-color: #26BD9C;
     display: flex;
     flex-direction: column;
