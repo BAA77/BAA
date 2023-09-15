@@ -146,24 +146,57 @@ section#object div.logo img {
     border-radius: 50%;
 }
 
+section#object div.posterityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 section#object div.objectPosterity {
-    width: 85%;
     color: rgb(238, 238, 238);
     padding: 0.3rem;
-    margin: 1.7rem auto;
+    margin: 0.5rem 0rem;
 }
 
 section#object div.objectPosterity h3 {
+    position: relative;
+    z-index: 1;
+    max-width: 20rem;
+    height: 2.5rem;
+    background-color: #4EA791;
     font-family: 'Eczar', serif;
     font-size: 25px;
-    margin-bottom: 0.3rem;
+    margin: 0rem auto -1.5rem;
     text-align: center;
     color: #091522;
+    border-bottom-left-radius: 50%;
+     border-bottom-right-radius: 50%;
+    box-shadow: 2px 2px 5px white;
 }
 
 section#object div.objectPosterity p {
+    width: 75vw;
     font-size: 20px;
     text-align: center;
+    padding: 4.5rem 1rem;
+    margin: 0.5rem auto 0rem;
+    outline: 1.5px solid white;
+    background-color: rgba(0, 0, 0, 0.366);
+    border-radius: 11px;
+}
+
+section#object div.objectPosterity div.oPImgCon {
+    text-align: center;
+}
+
+section#object div.objectPosterity img.oPImg {
+    position: relative;
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    border: 5px solid #4EA791;
+    border-radius: 50%;
+    margin: -3.5rem auto 0rem;
 }
 
 /* -------FOOTER------- */
@@ -192,7 +225,7 @@ footer div.footerPortContainer {
 }
 
 footer div.footerPortContainer h4 {
-    font-size: 23px;
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
 }
 
@@ -224,7 +257,7 @@ footer div.footerPortContainer ul li a img {
 }
 
 footer div.footerPortContainer ul li a p {
-    font-size: 19px;
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
     padding-right: 0.5rem;
 }
@@ -241,8 +274,8 @@ footer p#copyright {
 
 
 
-/* ---MEDIA QUERY FOR 2000PX OF WIDTH--- */
-@media(max-width: 2000px) {
+/* ---MEDIA QUERY FOR 1700PX OF WIDTH--- */
+@media(max-width: 1700px) {
 
     /* -------Header( Navigation Menu )------- */
     header {
@@ -300,11 +333,20 @@ section#object div.objectPosterity {
 }
 
 section#object div.objectPosterity h3 {
-    font-size: 23px;
+    max-width: 18rem;
+    height: 2.4rem;
+    font-size: 22px;
 }
 
 section#object div.objectPosterity p {
+    width: 87vw;
     font-size: 19px;
+}
+
+section#object div.objectPosterity img.oPImg {
+    width: 6rem;
+    height: 6rem;
+    margin: -3rem auto 0rem;
 }
 
 /* -------FOOTER------- */
@@ -451,11 +493,12 @@ footer p#copyright {
     }
 
     section#object div.objectPosterity h3 {
-        font-size: 23.5px;
-        margin-bottom: 0.2rem;
+        max-width: 17.5rem;
+        font-size: 21.5px;
     }
 
     section#object div.objectPosterity p {
+        width: 93vw;
         font-size: 19px;
     }
 
@@ -546,11 +589,12 @@ footer p#copyright {
     }
 
     section#object div.objectPosterity {
-        width: 97%;
+        width: 100%;
     }
 
     section#object div.objectPosterity h3 {
-        font-size: 22px;
+        max-width: 15rem;
+        font-size: 21px;
     }
 
     section#object div.objectPosterity p {
