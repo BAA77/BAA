@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #339D87;
+    background-color: black;
 }
 
 /* ------- Window Background ------- */
@@ -16,7 +16,7 @@ div#windowBg {
     position: fixed;
     left: 0vw;
     top: 0vh;
-    background-color: #0C8B78;
+    background-color: black;
     z-index: 6;
 }
 
@@ -25,8 +25,7 @@ div#backsplash {
     width: 100%;
     height: 100vh;
     top: 0;
-    background-color: #339D87;
-    background-image: url(JPEG/welcomeMessageBackground.jpg);
+    background-image: url(graph/backdroplippi.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -35,7 +34,7 @@ div#backsplash {
 
 /* -------Header( Navigation Menu )------- */
 header {
-    background-color: #26BD9C;
+    background-color: #26bd9c;
     width: 100%;
     height: 2.8rem;
     top: 0;
@@ -85,6 +84,7 @@ header nav ul a li {
     line-height: 1.2rem;
     border-radius: 15px;
     box-shadow: 1px 1px 5px white;
+    background-color: #26BD9C;
 }
 
 header nav ul a li.active {
@@ -241,7 +241,6 @@ section.theBridgeSection {
     width: 99%;
     text-align: center;
     color: whitesmoke;
-    background: url(JPEG/background3.jpg);
     padding: 1rem 0.2rem;
     margin: 1.5rem auto 0rem;
     font-family: 'Abhaya Libre', serif;
@@ -251,6 +250,7 @@ section.theBridgeSection h3 {
     font-family: 'Eczar', serif;
     font-size: 27px;
     line-height: 2rem;
+    color: white;
     margin: 0rem 0rem 0.1rem 0rem;
 }
 
@@ -269,18 +269,95 @@ section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
     height: 172.2px;
     font-size: 21px;
     display: flex;
-    text-align: left;
+    text-align: center;
     align-items: center;
     padding: 0.5rem 1rem;
+}
+
+/* ------- Search/Acquisition of Boat, Aircraft and Automotive ------- */
+
+section.sAcBAA {
+    background-color: rgba(0, 0, 0, 0.38);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon {
+    
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe {
+    width: 100%;
+    height: 77vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.2rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div#iSAcBtAtAe1 {
+    background: url(JPEG/9ed4fe815a2a4879bb5ff3cb1c93822d_368107902_1492554017951836_5426545056534853260_n.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section.sAcBAA div.iSAcBtAtAeCon div#iSAcBtAtAe2 {
+    background: url(JPEG/airplane-taking-off-sunset-scene-generative-ai.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section.sAcBAA div.iSAcBtAtAeCon div#iSAcBtAtAe3 {
+    background: url(JPEG/pexels-jay-pizzle-3802510.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon {
+    height: 77vh;
+    padding: 20vh 2rem 0rem;
+    background-color: rgba(0, 0, 0, 0.398)
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon:hover {
+    background-color: rgba(0, 0, 0, 0.298)
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button {
+    font-family: 'Cinzel', serif;
+    position: relative;
+    cursor: pointer;
+    width: 25vw;
+    height: 4.5rem;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.822);
+    border: 2px solid white;
+    color: white;
+    z-index: 1;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button:hover {
+    background-color: rgba(139, 0, 0, 0.672);
+    color: white;
+    border: 2px solid black;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
+    width: 50vw;
+    font-size: 20px;
+    color: white;
+    margin: 2rem auto;
 }
 
 /* -------How To Use The Platform------- */
 section.howToUseThePlatform {
     font-family: 'Abhaya Libre', serif;
+    margin-top: 0rem;
 }
 
 section.howToUseThePlatform div.hTUTPContent {
-    color: white;
+    color: whitesmoke;
+    padding-bottom: 1rem;
 }
 
 section.howToUseThePlatform div.hTUTPContent h3 {
@@ -293,7 +370,7 @@ section.howToUseThePlatform div.hTUTPContent h3 {
 }
 
 section.howToUseThePlatform div.hTUTPContent h3 span#targetSteps {
-    color: #122B44;
+    color: rgb(139, 0, 0);
 }
 
 section.howToUseThePlatform div.hTUTPContent #imgLS {
@@ -302,8 +379,8 @@ section.howToUseThePlatform div.hTUTPContent #imgLS {
     position: fixed;
     left: 94vw;
     top: 9vh;
+    background-color: darkred;
     z-index: 8;
-    background-color: rgb(139, 10, 10);
     padding: 3px 3px;
     border: 2px solid transparent;
     border-radius: 50%;
@@ -321,8 +398,7 @@ section.howToUseThePlatform div.hTUTPContent #imgLS:hover {
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps {
-    border: 3px solid white;
-    background: url(JPEG/background4.jpg);
+    border: 1.2px solid #339d884a;
     padding: 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
@@ -330,8 +406,8 @@ section.howToUseThePlatform div.hTUTPContent div.steps {
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps h4 {
-    font-size: 23px;
-    color: #122B44;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps .stepContent {
@@ -464,7 +540,7 @@ section div.news div.swiper div.img  button img {
 
 section div.news div.swiper div.swiperWrapper {
     width: 87%;
-    background-color: #26BD9C;
+    box-shadow: 0.08rem 0.05rem 0.3rem whitesmoke;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 0.9rem 0.3rem 1.2rem 1.5rem;
@@ -489,7 +565,7 @@ section div.news div.swiper div.swiperWrapper div.swiperSlide {
 }
 
 section div.news div.swiper div.swiperWrapper div.swiperSlide:hover {
-    background: rgba(208, 208, 208, 0.818);
+    background: rgba(255, 255, 255, 0.818);
     transform: scale(1.09);
 }
 
@@ -530,7 +606,7 @@ section div.news div.swiper div.swiperWrapper div.swiperSlide a div.linkTitle p 
 section.closingNote {
     width: 99%;
     text-align: center;
-    background: url(JPEG/background3.jpg);
+     background-color: rgba(139, 0, 0, 0.672);;
     padding: 1rem 0.2rem;
     margin: 6rem auto 0rem;
     font-family: 'Abhaya Libre', serif;
@@ -561,11 +637,10 @@ section.closingNote div.closingNoteContent div.closingNoteParagraph {
 
 /* -------KINGDOM EVENT PUBLICITY------- */
 section.KEP {
-    font-family: 'Abhaya Libre', serif;
-    color: #122B44;
+    font-family: 'Cinzel', serif;
+    color: white;
     padding: 0.3rem 0.3rem;
     margin:  2.3rem 3.5rem 1.3rem 3.5rem;
-    display: none;
 }
 
 section.KEP .KEPframe {
@@ -573,7 +648,7 @@ section.KEP .KEPframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2feac1;
+    background-color: rgba(139, 0, 0, 0.672);;
     padding-bottom: 1.2rem;
 }
 
@@ -586,7 +661,7 @@ section.KEP .KEPframe .KEPcontent {
 
 section.KEP .KEPframe .KEPcontent h1 {
     width: 65vw;
-    font-size: 27px;
+    font-size: 23px;
     text-align: center;
     padding: 0rem 5rem;
     margin: 1rem 0rem 0.7rem 0rem;
@@ -596,21 +671,21 @@ section.KEP .KEPframe .KEPcontent video {
     width: 65vw;
     height: 63vh;
     cursor: pointer;
-    background: url(JPEG/background4.jpg);
+    background-color: black;
     border: none;
 }
 
 .bottomFrame {
     width: 65vw;
     height: 1.7rem;
-    background: url(JPEG/background4.jpg);
+    background-color: black;
     margin: 0.3rem 0rem 0.3rem 0rem;
 }
 
 .screenStand {
     width: 27%;
     height: 2.1rem;
-    background: url(JPEG/background3.jpg);
+    background-color: black;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     margin-top: -0.3rem;
@@ -642,7 +717,7 @@ footer div.footerPortContainer {
 }
 
 footer div.footerPortContainer h4 {
-    font-size: 23px;
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
 }
 
@@ -674,7 +749,7 @@ footer div.footerPortContainer ul li a img {
 }
 
 footer div.footerPortContainer ul li a p {
-    font-size: 19px;
+    font-size: 21px;
     font-family: 'Abhaya Libre', serif;
     padding-right: 0.5rem;
 }
@@ -691,8 +766,8 @@ footer p#copyright {
 
 
 
-/* ---MEDIA QUERY FOR 1450PX OF WIDTH--- */
-@media(max-width: 1450px) {
+/* ---MEDIA QUERY FOR 1700PX OF WIDTH--- */
+@media(max-width: 1700px) {
 
 /* -------Header( Navigation Menu )------- */
 header {
@@ -765,6 +840,42 @@ section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
     padding: 0.5rem 0.5rem;
 }
 
+/* ------- Search/Acquisition of Boat, Aircraft and Automotive ------- */
+
+section.sAcBAA {
+    margin-top: 1.5rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe {
+    height: 57vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.2rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon {
+    height: 57vh;
+    padding: 20vh 2rem 0rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button {
+    width: 37vw;
+    height: 3.5rem;
+    font-size: 20px;
+    border: 1.5px solid white;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button:hover {
+    border: 1.5px solid black;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
+    width: 50vw;
+    font-size: 18px;
+    color: white;
+    margin: 2rem auto;
+}
+
 /* -------How To Use The Platform------- */
 
 section.howToUseThePlatform div.hTUTPContent h3 {
@@ -798,7 +909,7 @@ section.howToUseThePlatform div.hTUTPContent #imgAS:hover {
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps {
-    border: 2px solid white;
+    border: 1px solid #339D87;
     padding: 0.5rem 0.5rem;
     margin: 1rem 0.7rem 0rem 0.8rem;
 }
@@ -915,7 +1026,7 @@ section.KEP {
 
 section.KEP .KEPframe .KEPcontent h1 {
     width: 87%;
-    font-size: 27px;
+    font-size: 20px;
     padding: 0.2rem 0.2rem;
     margin: 1rem 0rem 0.3rem 0rem;
 }
@@ -1128,6 +1239,39 @@ footer p#copyright {
         padding: 0.5rem 0.8rem;
     }
 
+    /* ------- Search/Acquisition of Boat, Aircraft and Automotive ------- */
+
+section.sAcBAA {
+    margin-top: 1.5rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe {
+    height: 40vh;
+    margin-bottom: 0.2rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon {
+    height: 40vh;
+    padding: 13vh 2rem 0rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button {
+    width: 62vw;
+    height: 2.5rem;
+    font-size: 18px;
+    border: 1.5px solid white;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button:hover {
+    border: 1.5px solid black;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
+    width: 80vw;
+    font-size: 16.5px;
+    margin: 1.2rem auto;
+}
+
     /* -------How To Use The Platform------- */
     
     section.howToUseThePlatform div.hTUTPContent h3 {
@@ -1160,7 +1304,7 @@ footer p#copyright {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps {
-        border: 1px solid white;
+        border: 1px solid #339D87;
         padding: 0.3rem 0.3rem;
         margin: 1rem 0.8rem 0rem 0.8rem;
     }
@@ -1206,7 +1350,7 @@ footer p#copyright {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p span#MediaQ359 {
-        display: block;
+        display: inline;
     }
 
     /* -------Boat, Aircraft and Automotive News------- */
@@ -1308,7 +1452,7 @@ section.KEP {
 
 section.KEP .KEPframe .KEPcontent h1 {
     width: 93%;
-    font-size: 22.5px;
+    font-size: 18px;
     margin: 1rem 0rem 0.2rem 0rem;
 }
 
@@ -1434,6 +1578,22 @@ section.KEP .KEPframe .KEPcontent video {
         font-size: 17px;
     }
 
+    /* ------- Search/Acquisition of Boat, Aircraft and Automotive ------- */
+
+section.sAcBAA {
+    margin-top: 1.5rem;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button {
+    width: 71vw;
+    height: 2.3rem;
+    font-size: 17px;
+}
+
+section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
+    font-size: 15px;
+}
+
     /* -------How To Use The Platform------- */
     
     section.howToUseThePlatform div.hTUTPContent h3 {
@@ -1468,7 +1628,7 @@ section.KEP .KEPframe .KEPcontent video {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps {
-        border: 1px solid white;
+        border: 1px solid #339D87;
         padding: 0.3rem 0rem 0.1rem 0.1;
         margin: 1rem 0.3rem 0rem 0.3rem;
     }
@@ -1581,7 +1741,7 @@ section.KEP .KEPframe .KEPcontent video {
     
     section.KEP .KEPframe .KEPcontent h1 {
         width: 93%;
-        font-size: 21.5px;
+        font-size: 17px;
         margin: 1rem 0rem 0.2rem 0rem;
     }
     
