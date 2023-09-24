@@ -1,4 +1,4 @@
-* {
+{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -146,7 +146,7 @@ div.platformWelcomeMessage {
     font-family: 'Abhaya Libre', serif;
 }
 
-div.platformWelcomeMessage h1 {
+div.platformWelcomeMessage div.h1 {
     font-size: 35px;
     font-family: 'Abhaya Libre', serif;
     animation-name: slide;
@@ -163,11 +163,11 @@ div.platformWelcomeMessage h1 {
     }
 }
 
-div.platformWelcomeMessage h1 span#targetWelcome {
+div.platformWelcomeMessage div.h1 span#targetWelcome {
     color: #122B44;
 }
 
-div.platformWelcomeMessage h4 {
+div.platformWelcomeMessage div.h4 {
     font-size: 12px;
     font-family: 'Abhaya Libre', serif;
     animation-name: slide;
@@ -238,35 +238,27 @@ div.scrollContentContainer {
 
 /* -------The Bridge Section------- */
 section.theBridgeSection {
-    width: 99%;
+    width: 45%;
     text-align: center;
     color: whitesmoke;
     padding: 1rem 0.2rem;
-    margin: 1.5rem auto 0rem;
+    margin: 4rem auto 4.3rem;
     font-family: 'Abhaya Libre', serif;
 }
 
-section.theBridgeSection h3 {
+section.theBridgeSection h1 {
     font-family: 'Eczar', serif;
-    font-size: 27px;
+    font-size: 31px;
     line-height: 2rem;
     color: white;
-    margin: 0rem 0rem 0.1rem 0rem;
+    margin: 0rem auto 0.4rem;
 }
 
 section.theBridgeSection div.theBridgeContent {
     display: inline-flex;
 }
 
-section.theBridgeSection div.theBridgeContent img {
-    width: 237px;
-    height: 174.2px;
-    border-radius: 50%;
-    padding: 0.5rem 0.5rem;
-}
-
 section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
-    height: 172.2px;
     font-size: 21px;
     display: flex;
     text-align: center;
@@ -287,15 +279,15 @@ section.sAcBAA div.iSAcBtAtAeCon {
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe {
-    width: 100%;
+    width: 99%;
     height: 77vh;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-bottom: 0.2rem;
+    margin: 0rem auto 0.2rem;
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div#iSAcBtAtAe1 {
-    background: url(JPEG/9ed4fe815a2a4879bb5ff3cb1c93822d_368107902_1492554017951836_5426545056534853260_n.jpg);
+    background: url(JPEG/Yachtbg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -307,7 +299,7 @@ section.sAcBAA div.iSAcBtAtAeCon div#iSAcBtAtAe2 {
     background-repeat: no-repeat;
 }
 section.sAcBAA div.iSAcBtAtAeCon div#iSAcBtAtAe3 {
-    background: url(JPEG/pexels-jay-pizzle-3802510.jpg);
+    background: url(JPEG/pexels-brady-knoll-3221163.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -327,8 +319,8 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button {
     font-family: 'Cinzel', serif;
     position: relative;
     cursor: pointer;
-    width: 25vw;
-    height: 4.5rem;
+    width: 20vw;
+    height: 4rem;
     font-size: 24px;
     background-color: rgba(0, 0, 0, 0.822);
     border: 2px solid white;
@@ -343,7 +335,7 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button:hover {
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
-    width: 50vw;
+    width: 40%;
     font-size: 20px;
     color: white;
     margin: 2rem auto;
@@ -353,6 +345,7 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
 section.howToUseThePlatform {
     font-family: 'Abhaya Libre', serif;
     margin-top: 0rem;
+    padding-top: 0.1rem;
 }
 
 section.howToUseThePlatform div.hTUTPContent {
@@ -398,11 +391,13 @@ section.howToUseThePlatform div.hTUTPContent #imgLS:hover {
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps {
-    border: 1.2px solid #339d884a;
+    width: 70%;
+    border: 1.5px solid #339d884a;
     padding: 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
-    margin: 1rem 0.8rem 0rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.652);
+    margin: 1rem auto 0.8rem;
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps h4 {
@@ -454,7 +449,7 @@ section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.1rem 0.9rem;
+    padding: 0.1rem 1.5rem 0.1rem 0.9rem;
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsPN p {
@@ -488,7 +483,7 @@ section div.news div.swiper {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 section div.news div.swiper div.img {
@@ -524,7 +519,7 @@ section div.news div.swiper div.img  button img {
 }
 
 #leftGate {
-    left: 6.5%;
+    left: 10%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     display: none;
@@ -532,14 +527,14 @@ section div.news div.swiper div.img  button img {
 
 #rightGate {
     display: block;
-    right: 6.5%;
+    right: 10%;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background-image: linear-gradient(-90deg, #226764, transparent);
 }
 
 section div.news div.swiper div.swiperWrapper {
-    width: 87%;
+    width: 80%;
     box-shadow: 0.08rem 0.05rem 0.3rem whitesmoke;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -648,7 +643,7 @@ section.KEP .KEPframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(139, 0, 0, 0.672);;
+    background-color: rgba(139, 0, 0, 0.672);
     padding-bottom: 1.2rem;
 }
 
@@ -659,7 +654,7 @@ section.KEP .KEPframe .KEPcontent {
     justify-content: center;
 }
 
-section.KEP .KEPframe .KEPcontent h1 {
+section.KEP .KEPframe .KEPcontent div.h1KEP {
     width: 65vw;
     font-size: 23px;
     text-align: center;
@@ -693,81 +688,127 @@ section.KEP .KEPframe .KEPcontent video {
 
 /* -------FOOTER------- */
 footer {
-    background-color: #26BD9C;
     display: flex;
+    font-family: 'Abhaya Libre', serif;
     flex-direction: column;
-    color: #122B44;
-    padding: 1rem 1rem;
-    margin-top: 3.3rem;
+    background: url(graph/backdroplippi.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #26BD9C;
+    opacity: 0.9;
+    padding-top: 1.2rem;
+    margin-top: 5rem;
 }
 
-footer div.footerLogo {
-    text-align: center;
+footer div.fterImgCon {
+    width: 90px;
+    height: 86.5px;
+    margin: 1rem auto;
+    border-radius: 50%;
+    background-color: #26BD9C;
+    border: 5px solid black;
 }
 
-footer div.footerLogo img {
+footer div.fterImgCon img {
     width: 90px;
     height: 86.5px;
 }
 
-footer div.footerPortContainer {
+footer div.linksContainer {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
+    justify-content: space-evenly;
+    margin-bottom: 0.8rem;
 }
 
-footer div.footerPortContainer h4 {
-    font-size: 21px;
-    font-family: 'Abhaya Libre', serif;
+footer div.anchorLink h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 19px;
+    text-align: left;
+    padding: 0rem 0.3rem;
+    margin: 0.3rem 0rem 1.2rem 0rem;
+    color: rgb(139, 0, 0);
 }
 
-footer div.footerPortContainer ul {
+footer div.anchorLink ul {
     list-style: none;
 }
 
-footer div.footerPortContainer ul li a {
-    text-decoration: none;
-    color: white;
-    display: inline-flex;
-    margin-top: 0.7rem;
+footer div.anchorLink ul li {
+    height: 19px;
+    text-align: left;
+    font-size: 20px;
+    padding: 0.1rem 0.3rem;
+    margin: 0.8rem 0rem;
 }
 
-footer div.footerPortContainer ul li a:hover {
-    background-color: #125754;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-footer div.footerPortContainer ul li a.active {
-    color: #122B44;
-}
-
-footer div.footerPortContainer ul li a img {
-    width: 16.5px;
-    height: 16.5px;
-    margin-right: 0.35rem;
-}
-
-footer div.footerPortContainer ul li a p {
-    font-size: 21px;
-    font-family: 'Abhaya Libre', serif;
-    padding-right: 0.5rem;
-}
-
-footer p#copyright {
+footer div#quickLink h4 {
     text-align: center;
-    font-size: 19px;
-    font-family: 'Abhaya Libre', serif;
-    padding: 0.3rem;
-    margin-top: 0.3rem;
-    background: url(JPEG/background3.jpg);
+}
+
+footer div#quickLink ul li {
+    text-align: center;
+}
+
+footer div.anchorLink ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0rem 0.3rem;
+}
+
+footer div.anchorLink ul li a:hover {
+    background-color: #32f3c9;
+    border-radius: 7px;
+}
+
+footer div.anchorLink ul li a#redQLink {
     color: white;
+    background-color: transparent;
+}
+
+footer div.anchorLink ul li a img {
+    width: 19px;
+    height: 19px;
+}
+
+hr#beforeRmrk {
+    width: 15%;
+    margin: 0.1rem auto;
+    box-shadow: 1px 1px 3px whitesmoke;
+}
+
+footer div.footerRmrk {
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+    margin: 0.8rem auto;
+}
+
+footer div.footerRmrk p {
+    background-color: transparent;
+    color: black;
+}
+
+footer div.footerRmrk p#supportEmail {
+    background-color: transparent;
+    color: rgb(139, 0, 0);
+}
+
+footer p {
+    width: 99%;
+    font-size: 18px;
+    font-family: 'Abhaya Libre', serif;
+    text-align: center;
+    padding: 0.2rem 0.3rem;
+    color: whitesmoke;
+    background-color: black;
+    margin: 0.4rem auto;
 }
 
 
 
-/* ---MEDIA QUERY FOR 1570PX OF WIDTH--- */
-@media(max-width: 1570px) {
+/* ---MEDIA QUERY FOR 1700PX OF WIDTH--- */
+@media(max-width: 1700px) {
 
 /* -------Header( Navigation Menu )------- */
 header {
@@ -807,11 +848,11 @@ header nav ul a li.active:after {
 
 /* -------Platform Welcome Message------- */
 
-div.platformWelcomeMessage h1 {
+div.platformWelcomeMessage div.h1 {
     font-size: 31px;
 }
 
-div.platformWelcomeMessage h4 {
+div.platformWelcomeMessage div.h4 {
     font-size: 9px;
 }
 
@@ -826,13 +867,14 @@ div.platformWelcomeMessage p {
 
 /* -------The Bridge Section------- */
 
-section.theBridgeSection h3 {
-    font-size: 26px;
+section.theBridgeSection {
+    width: 70%;
+    margin: 1.7rem auto 2.3rem;
 }
 
-section.theBridgeSection div.theBridgeContent img {
-    width: 215px;
-    height: 158.2px;
+section.theBridgeSection h1 {
+    width: 70%;
+    font-size: 30px;
 }
 
 section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
@@ -870,10 +912,10 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button:hover {
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
-    width: 50vw;
+    width: 59%;
     font-size: 18px;
     color: white;
-    margin: 2rem auto;
+    margin: 1.3rem auto;
 }
 
 /* -------How To Use The Platform------- */
@@ -909,9 +951,10 @@ section.howToUseThePlatform div.hTUTPContent #imgAS:hover {
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps {
+    width: 85%;
     border: 1px solid #339D87;
     padding: 0.5rem 0.5rem;
-    margin: 1rem 0.7rem 0rem 0.8rem;
+    margin: 1rem auto 0rem;
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps h4 {
@@ -1024,7 +1067,7 @@ section.KEP {
     margin:  1.7rem 0rem 0.8rem 0rem;
 }
 
-section.KEP .KEPframe .KEPcontent h1 {
+section.KEP .KEPframe .KEPcontent div.h1KEP {
     width: 87%;
     font-size: 20px;
     padding: 0.2rem 0.2rem;
@@ -1050,35 +1093,59 @@ section.KEP .KEPframe .KEPcontent video {
 
 /* -------FOOTER------- */
 footer {
-    margin-top: 2.3rem;
+    padding-top: 1rem;
+    margin-top: 3.8rem;
 }
 
-footer div.footerLogo img {
+footer div.fterImgCon {
+    width: 80px;
+    height: 76.9px;
+    margin: 0.8rem auto;
+    border: 3.5px solid black;
+}
+
+footer div.fterImgCon img {
     width: 80px;
     height: 76.9px;
 }
 
-footer div.footerPortContainer h4 {
-    font-size: 18px;
+footer div.linksContainer {
+    margin-bottom: 0.8rem;
 }
 
-footer div.footerPortContainer ul li a:hover {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+footer div.anchorLink h4 {
+    font-size: 16px;
+    margin: 0.35rem 0rem 0.4rem 0rem;
 }
 
-footer div.footerPortContainer ul li a img {
-    width: 15px;
-    height: 15px;
+footer div.anchorLink ul li {
+    height: 16.5px;
+    font-size: 16px;
+    padding: 0.1rem 0.25rem;
+    margin-top: 0.35rem;
 }
 
-footer div.footerPortContainer ul li a p {
-    font-size: 15px;
+footer div.anchorLink ul li a:hover {
+    border-radius: 6px;
 }
 
-footer p#copyright {
-    font-size: 15px;
+footer div.anchorLink ul li a img {
+    width: 16.5px;
+    height: 16.5px;
 }
+
+footer div.footerRmrk {
+    width: 75%;
+    font-size: 15.5px;
+    margin: 0.7rem auto;
+}
+
+footer p {
+    font-size: 16px;
+    padding: 0.2rem 0.2rem;
+    margin: 0.3rem auto;
+}
+
 
 }
 
@@ -1188,15 +1255,15 @@ footer p#copyright {
         font-family: 'Ubuntu', sans-serif;
     }
 
-    div.platformWelcomeMessage h1 {
+    div.platformWelcomeMessage div.h1 {
         font-size: 29px;
     }
 
-    div.platformWelcomeMessage h4 {
+    div.platformWelcomeMessage div.h4 {
         font-size: 12.5px;
     }
 
-    div.platformWelcomeMessage h1 span#targetWelcome {
+    div.platformWelcomeMessage div.h1 span#targetWelcome {
         color: #122B44;
     }
 
@@ -1211,12 +1278,13 @@ footer p#copyright {
 
     /* -------The Bridge Section------- */
     section.theBridgeSection {
+        width: 92%;
         margin-top: 0.7rem;
     }
 
-    section.theBridgeSection h3 {
-        line-height: 1.7rem;
-        font-size: 23.5px;
+    section.theBridgeSection h1 {
+        width: 90%;
+        font-size: 27.5px;
     }
 
     section.theBridgeSection div.theBridgeContent {
@@ -1269,7 +1337,7 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button:hover {
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
     width: 80vw;
     font-size: 16.5px;
-    margin: 1.2rem auto;
+    margin: 0.7rem auto;
 }
 
     /* -------How To Use The Platform------- */
@@ -1304,9 +1372,10 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps {
+        width: 92%;
         border: 1px solid #339D87;
         padding: 0.3rem 0.3rem;
-        margin: 1rem 0.8rem 0rem 0.8rem;
+        margin: 1rem auto 0rem;
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps h4 {
@@ -1450,7 +1519,7 @@ section.KEP {
     margin:  2.3rem 0.2rem 1.3rem 0.2rem;
 }
 
-section.KEP .KEPframe .KEPcontent h1 {
+section.KEP .KEPframe .KEPcontent div.h1KEP {
     width: 93%;
     font-size: 18px;
     margin: 1rem 0rem 0.2rem 0rem;
@@ -1475,43 +1544,54 @@ section.KEP .KEPframe .KEPcontent video {
 
     /* -------Footer------- */
     footer {
-        padding: 0.5rem 0.5rem;
-        margin-top: 2.9rem;
+        padding-top: 0.5rem;
+        margin-top: 3rem;
     }
-
-    footer div.footerLogo img {
+    
+    footer div.fterImgCon {
+        width: 58px;
+        height: 55.5px;
+        margin: 0.75rem auto;
+        border: 2.5px solid black;
+    }
+    
+    footer div.fterImgCon img {
         width: 58px;
         height: 55.5px;
     }
-
-    footer div.footerPortContainer {
-        padding: 0.7rem 1rem;
+    
+    footer div.linksContainer {
+        margin-bottom: 0.9rem;
     }
 
-    footer div.footerPortContainer h4 {
-        font-size: 17.5px;
+    footer div.anchorLink h4 {
+        font-size: 14px;
+        margin: 0.45rem 0rem 0.45rem 0rem;
     }
-
-    footer div.footerPortContainer ul li a {
-        margin-top: 0.7rem;
-    }
-
-    footer div.footerPortContainer ul li a img {
-        width: 14.5px;
-        height: 14.5px;
-    }
-
-    footer div.footerPortContainer ul li a p {
-        font-size: 14.5px;
-        padding-right: 0.3rem;
-    }
-
-    footer p#copyright {
-        font-size: 14.5px;
-        padding: 0.3rem;
+    
+    footer div.anchorLink ul li {
+        height: 15px;
+        font-size: 15px;
         margin-top: 0.3rem;
     }
-
+    
+    footer div.anchorLink ul li a img {
+        width: 15px;
+        height: 15px;
+    }
+    
+    footer div.footerRmrk {
+        width: 80%;
+        font-size: 14.5px;
+        margin: 0.9rem auto;
+    }
+    
+    footer p {
+        font-size: 15px;
+        padding: 0.2rem 0.2rem;
+        margin: 0.3rem auto;
+    }
+    
 }
 
 
@@ -1546,15 +1626,15 @@ section.KEP .KEPframe .KEPcontent video {
         margin-top: 7.2rem;
     }
 
-    div.platformWelcomeMessage h1 {
+    div.platformWelcomeMessage div.h1 {
         font-size: 22.3px;
     }
 
-    div.platformWelcomeMessage h4 {
+    div.platformWelcomeMessage div.h4 {
         font-size: 11.8px;
     }
 
-    div.platformWelcomeMessage h1 span#targetWelcome {
+    div.platformWelcomeMessage div.h1 span#targetWelcome {
         color: #122B44;
     }
 
@@ -1568,9 +1648,12 @@ section.KEP .KEPframe .KEPcontent video {
     }
 
     /* -------The Bridge Section------- */
-    section.theBridgeSection h3 {
-        line-height: 1.6rem;
-        font-size: 22px;
+    section.theBridgeSection {
+        width: 97%;
+    }
+
+    section.theBridgeSection div.h1KEP {
+        font-size: 26px;
     }
 
     section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
@@ -1591,6 +1674,7 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon a button {
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
+    width: 95%;
     font-size: 15px;
 }
 
@@ -1628,9 +1712,10 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps {
+        width: 95%;
         border: 1px solid #339D87;
         padding: 0.3rem 0rem 0.1rem 0.1;
-        margin: 1rem 0.3rem 0rem 0.3rem;
+        margin: 1rem auto 0rem;
     }
     
     section.howToUseThePlatform div.hTUTPContent div.steps h4 {
@@ -1764,32 +1849,46 @@ section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon p {
 
     /* -------footer------- */
     footer {
-        padding: 0.5rem 0.25rem;
+        padding-top: 0.45rem;
+        margin-top: 2.8rem;
     }
-
-    footer div.footerLogo img {
+    
+    footer div.fterImgCon {
+        width: 50px;
+        height: 47.8px;
+    }
+    
+    footer div.fterImgCon img {
         width: 50px;
         height: 47.8px;
     }
 
-    footer div.footerPortContainer {
-        padding: 0.7rem 0rem;
+    footer div.anchorLink h4 {
+        text-align: center;
+        font-size: 12px;
+        margin: 0.45rem 0rem 0.45rem 0rem;
     }
-
-    footer div.footerPortContainer h4 {
-        font-size: 16px;
-    }
-
-    footer div.footerPortContainer ul li a img {
-        width: 13.5px;
-        height: 13.5px;
-    }
-
-    footer div.footerPortContainer ul li a p {
+    
+    footer div.anchorLink ul li {
+        height: 14px;
         font-size: 14px;
+        margin-top: 0.2rem;
     }
-
-    footer p#copyright {
+    
+    footer div.anchorLink ul li a img {
+        width: 14px;
+        height: 14px;
+    }
+    
+    footer div.footerRmrk {
+        width: 92%;
+        font-size: 13.5px;
+    }
+    
+    footer p {
         font-size: 14px;
+        padding: 0.2rem 0.1rem;
+        margin: 0.25rem auto;
     }
+    
 }
