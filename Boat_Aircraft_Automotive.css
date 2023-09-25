@@ -215,17 +215,19 @@ div.platformWelcomeMessage p {
 
 @keyframes drift {
     0% {
-        margin-right: 200vw;
-        margin-top: 200vh;
+        margin-right: 100vw;
+        margin-top: 100vh;
+        visibility: hidden;
     }
     35% {
-        margin-right: 200vw;
-        margin-top: 200vh;
+        margin-right: 100vw;
+        margin-top: 100vh;
+        visibility: hidden;
     }
     100% {
         margin-right: 0vw;
         margin-top: 0vh;
-
+        visibility: visible;
     }
 }
 
@@ -248,10 +250,10 @@ section.theBridgeSection {
 
 section.theBridgeSection h1 {
     font-family: 'Eczar', serif;
-    font-size: 31px;
+    font-size: 33px;
     line-height: 2rem;
     color: white;
-    margin: 0rem auto 0.4rem;
+    margin: 0rem auto 0.7rem;
 }
 
 section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
