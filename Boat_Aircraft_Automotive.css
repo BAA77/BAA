@@ -1,4 +1,4 @@
-{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -254,13 +254,8 @@ section.theBridgeSection h1 {
     margin: 0rem auto 0.4rem;
 }
 
-section.theBridgeSection div.theBridgeContent {
-    display: inline-flex;
-}
-
 section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
     font-size: 21px;
-    display: flex;
     text-align: center;
     align-items: center;
     padding: 0.5rem 1rem;
@@ -483,7 +478,7 @@ section div.news div.swiper {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 section div.news div.swiper div.img {
@@ -807,8 +802,8 @@ footer p {
 
 
 
-/* ---MEDIA QUERY FOR 1700PX OF WIDTH--- */
-@media(max-width: 1700px) {
+/* ---MEDIA QUERY FOR 1550PX OF WIDTH--- */
+@media(max-width: 1550px) {
 
 /* -------Header( Navigation Menu )------- */
 header {
