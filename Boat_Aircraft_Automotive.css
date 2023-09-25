@@ -215,13 +215,13 @@ div.platformWelcomeMessage p {
 
 @keyframes drift {
     0% {
-        margin-right: 100vw;
-        margin-top: 100vh;
+        margin-right: 45vw;
+        margin-top: 35vh;
         visibility: hidden;
     }
     35% {
-        margin-right: 100vw;
-        margin-top: 100vh;
+        margin-right: 45vw;
+        margin-top: 25vh;
         visibility: hidden;
     }
     100% {
@@ -253,7 +253,7 @@ section.theBridgeSection h1 {
     font-size: 33px;
     line-height: 2rem;
     color: white;
-    margin: 0rem auto 0.7rem;
+    margin: 0rem auto 1.7rem;
 }
 
 section.theBridgeSection div.theBridgeContent div.theBridgeParagraph {
