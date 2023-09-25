@@ -268,32 +268,34 @@
             formContent.style.height = `${backsplashHeight}px`;
         }
 
-        // -------Navigation-Menu for 359px/685px Device Width-------
-        let ul = document.getElementById('ul');
-        let open = document.getElementById('open');
-        let close = document.getElementById('close');
-        let navigation = document.getElementById('navigation');
+        // -------Menu Toggle For Width 685px-------
+        if (window.width <= 685) {
+            let ul = document.getElementById('ul');
+            let open = document.getElementById('open');
+            let close = document.getElementById('close');
+            let navigation = document.getElementById('navigation');
 
-        function toggleBarOpen() {
-            navigation.style.width = '50%';
-            close.style.display = 'block';
-            open.style.display = 'none';
-            ul.style.display = 'block'
-        }
+            function toggleBarOpen() {
+                navigation.style.width = '50%';
+                close.style.display = 'block';
+                open.style.display = 'none';
+                ul.style.display = 'block';
+            }
 
-        function toggleBarClose() {
-            navigation.style.width = '0%';
-            open.style.display = 'block';
-            close.style.display = 'none';
-            ul.style.display = 'none'
-        }
-
-        document.onclick = function (e) {
-            if (navigation.style.width = '50%' && e.target !== navigation && e.target !== open && e.target.id !== close) {
+            function toggleBarClose() {
                 navigation.style.width = '0%';
                 open.style.display = 'block';
                 close.style.display = 'none';
                 ul.style.display = 'none';
+            }
+
+            document.onclick = function (e) {
+                if (navigation.style.width = '50%' && e.target !== navigation && e.target !== open && e.target.id !== close) {
+                    navigation.style.width = '0%';
+                    open.style.display = 'block';
+                    close.style.display = 'none';
+                    ul.style.display = 'none';
+                }
             }
         }
 
