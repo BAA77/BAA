@@ -216,15 +216,12 @@ div.platformWelcomeMessage p {
 @keyframes drift {
     0% {
         visibility: hidden;
-        scale: 0;
     }
     70% {
         visibility: hidden;
-        scale: 0.01;
     }
     100% {
         visibility: visible;
-        scale: 1;
     }
 }
 
