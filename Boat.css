@@ -262,6 +262,7 @@ section#boatSearch form div.diContact input {
     height: 1.9rem;
     font-size: 20px;
     padding: 0.1rem 0.3rem;
+    border: none;
     outline: none;
     background-color: aliceblue;
     border-top-right-radius: 9px;
@@ -272,6 +273,7 @@ section#boatSearch form div.formEntrance button {
     width: 8.5rem;
     height: 1.8rem;
     font-size: 20px;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 2rem;
@@ -282,8 +284,7 @@ section#boatSearch form div.formEntrance button {
 }
 
 section#boatSearch form div.formEntrance button:hover {
-    color: rgb(14, 14, 14);
-    background-color: white;
+    background-color: #122B44;
 }
 
 section#boatSearch form div.formEntrance div.popUp{
