@@ -149,18 +149,6 @@ div.platformWelcomeMessage {
 div.platformWelcomeMessage div.h1 {
     font-size: 35px;
     font-family: 'Abhaya Libre', serif;
-    animation-name: slide;
-    animation-duration: 0.7s;
-    animation-iteration-count: 1;
-}
-
-@keyframes slide {
-    from {
-        margin-top: 200vh;
-    }
-    to {
-        margin-top: 0vh;
-    }
 }
 
 div.platformWelcomeMessage div.h1 span#targetWelcome {
@@ -170,37 +158,11 @@ div.platformWelcomeMessage div.h1 span#targetWelcome {
 div.platformWelcomeMessage div.h4 {
     font-size: 12px;
     font-family: 'Abhaya Libre', serif;
-    animation-name: slide;
-    animation-duration: 1.3s;
-    animation-iteration-count: 1;
 }
 
 div.platformWelcomeMessage div#welcomeImage img {
     width: 395px;
     height: 270.5px;
-    animation-name: appear;
-    animation-duration: 2.3s;
-    animation-iteration-count: 1;
-}
-
-@keyframes appear {
-    0% {
-        margin-top: 200vh;
-        transform: scale(0);
-    }
-    75% {
-        margin-top: 0vh;
-        transform: scale(0);
-    }
-    90% {
-        margin-top: 0vh;
-        transform: scale(1.1);
-    }
-    100% 
-    {
-        margin-top: 0vh;
-        transform: scale(1);
-    }
 }
 
 div.platformWelcomeMessage p {
@@ -208,21 +170,6 @@ div.platformWelcomeMessage p {
     font-family: 'Abhaya Libre', serif;
     width: 75%;
     padding: 0.1rem 0.1rem;
-    animation-name: drift;
-    animation-duration: 4.2s;
-    animation-iteration-count: 1;
-}
-
-@keyframes drift {
-    0% {
-        visibility: hidden;
-    }
-    70% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: visible;
-    }
 }
 
 div.scrollContentContainer {
