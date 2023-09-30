@@ -372,8 +372,6 @@ section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg im
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.stepsPImg:hover {
-    border: 1px solid white;
-    box-shadow: 3px 3px 4px #2feac1;
     transform: scale(1.03);
 }
 
@@ -921,8 +919,6 @@ section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg im
 }
 
 section.howToUseThePlatform div.hTUTPContent div.steps .stepContent .stepsImg img.img1450MQ:hover {
-    border: 1px solid white;
-    box-shadow: 2px 2px 3px #2feac1;
     transform: scale(1.03);
 }
 
