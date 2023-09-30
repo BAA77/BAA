@@ -330,7 +330,7 @@ section.howToUseThePlatform div.hTUTPContent #imgLS:hover {
 
 section.howToUseThePlatform div.hTUTPContent div.steps {
     width: 70%;
-    border: 1.5px solid #339d884a;
+    border: 3px solid #339d884a;
     padding: 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
@@ -890,7 +890,7 @@ section.howToUseThePlatform div.hTUTPContent #imgAS:hover {
 
 section.howToUseThePlatform div.hTUTPContent div.steps {
     width: 85%;
-    border: 1px solid #339D87;
+    border: 1.5px solid #339D87;
     padding: 0.5rem 0.5rem;
     margin: 1rem auto 0rem;
 }
