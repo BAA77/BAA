@@ -218,7 +218,7 @@ section.sAcBAA div.iSAcBtAtAeCon {
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe {
     width: 99%;
-    height: 77vh;
+    min-height: 77vh;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin: 0rem auto 0.2rem;
@@ -244,7 +244,7 @@ section.sAcBAA div.iSAcBtAtAeCon div#iSAcBtAtAe3 {
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon {
-    height: 77vh;
+    min-height: 77vh;
     padding: 20vh 2rem 0rem;
     background-color: rgba(0, 0, 0, 0.398)
 }
@@ -825,14 +825,14 @@ section.sAcBAA {
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe {
-    height: 57vh;
+    min-height: 57vh;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-bottom: 0.2rem;
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon {
-    height: 57vh;
+    min-height: 57vh;
     padding: 20vh 2rem 0rem;
 }
 
@@ -1248,12 +1248,12 @@ section.sAcBAA {
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe {
-    height: 40vh;
+    min-height: 40vh;
     margin-bottom: 0.2rem;
 }
 
 section.sAcBAA div.iSAcBtAtAeCon div.iSAcBtAtAe div.aLCon {
-    height: 40vh;
+    min-height: 40vh;
     padding: 13vh 2rem 0rem;
 }
 
