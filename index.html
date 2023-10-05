@@ -14,9 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@700&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Libre+Baskerville&family=Viaoda+Libre&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Libre+Baskerville&family=Special+Elite&family=Ubuntu:wght@700&family=Viaoda+Libre&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +64,7 @@
     </header>
 
     <!-------Platform Welcome Message------->
-    <section>
+    <section id="pWMsg">
         <div class="platformWelcomeMessage">
             <div class="h1">
                 YOU ARE <span id="targetWelcome">WELCOME</span>
@@ -824,7 +822,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://wa.me/27673769545" target="_blank">
+                            <a href="" target="_blank">
                                 <img src="graph/whatsapp1.png">
                                 <span>WhatsApp</span>
                             </a>
@@ -868,6 +866,9 @@
 
 
     <script>
+        // ------- Utility Universal Declaration -------
+        const backsplash = document.querySelector('#backsplash');
+        const scrollContent = document.querySelector('.scrollContentContainer');
 
         // -------Menu Toggle For Width 685px-------
         if (screen.width <= 685) {
@@ -900,6 +901,11 @@
             }
         }
 
+        // ------- Backsplash/Scroll Content -------
+        if(innerHeight < 450){
+            backsplash.style.height = '720px';
+            scrollContent.style.top = '720px';
+        }
 
         // ------- 10 Steps To Bringing Your Vision Into Fruition Responsive Image -------
 
